@@ -10,7 +10,7 @@ interface IProps {
   bgStyle?: ViewStyle;
 }
 
-const Container: FC<IProps> = props => {
+const PageContainer: FC<IProps> = props => {
   console.debug('[render] Container');
   const {scroll, padding, children, style, bgStyle, ...others} = props;
   const scrollRef = useRef<any>(null);
@@ -53,7 +53,7 @@ const Container: FC<IProps> = props => {
   );
 };
 
-export default memo(Container);
+export default memo(PageContainer);
 
 const styles = StyleSheet.create({
   scroll: {

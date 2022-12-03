@@ -1,6 +1,7 @@
-import {View, Text, Button} from 'react-native';
+import {Text, Button} from 'react-native';
 import React from 'react';
 import {dispatch} from '../../redux';
+import PageContainer from '../components/PageContainer';
 
 interface IProps {
   navigation: any;
@@ -18,11 +19,11 @@ function LoginScreen(props: IProps) {
   };
 
   return (
-    <View>
+    <PageContainer>
       <Text>LoginScreen</Text>
       <Button title="Go to Main" onPress={handleLogin} />
       <Button title="Go to Register" onPress={handleRegister} />
-    </View>
+    </PageContainer>
   );
 }
 
