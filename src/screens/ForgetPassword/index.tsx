@@ -7,24 +7,21 @@ interface IProps {
   login: any;
 }
 
-function LoginScreen(props: IProps) {
-  const {navigation} = props;
+function ForgetPasswordScreen(props: IProps) {
+  const {login} = props;
   const handleLogin = () => {
+    const loginStatus = login.get('loginStatus');
+    console.log('loginStatus:', loginStatus);
     dispatch('UPDATE_LOGIN_STATUS', true);
-  };
-
-  const handleRegister = () => {
-    navigation.navigate('Register');
   };
 
   return (
     <View>
       <Text>LoginScreen</Text>
       <Button title="Go to Main" onPress={handleLogin} />
-      <Button title="Go to Register" onPress={handleRegister} />
     </View>
   );
 }
 
 // export default LoginScreen;
-export default LoginScreen;
+export default ForgetPasswordScreen;

@@ -6,6 +6,8 @@ import {connect} from 'react-redux';
 import TabNavigator from '../tab';
 import ProfileScreen from '../../screens/Profile';
 import LoginScreen from '../../screens/Login';
+import ForgetPasswordScreen from '../../screens/ForgetPassword';
+import RegisterScreen from '../../screens/Register';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,10 +19,7 @@ interface IProps {
 
 function MainStackNavigator(props: IProps) {
   const {login} = props;
-  console.log('MainStackNavigator login:', login);
-  // const {loginStatus} = login;
   const loginStatus = login.get('loginStatus');
-  console.log('MainStackNavigator loginStatus:', loginStatus);
   return (
     <Stack.Navigator>
       {!loginStatus ? (
@@ -30,6 +29,11 @@ function MainStackNavigator(props: IProps) {
             component={LoginScreen}
             options={{presentation: 'modal', gestureDirection: 'vertical'}}
           />
+          <Stack.Screen
+            name="ForgetPassword"
+            component={ForgetPasswordScreen}
+          />
+          <Stack.Screen name="Register" component={RegisterScreen} />
         </>
       ) : (
         <>
