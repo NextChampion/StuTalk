@@ -12,17 +12,16 @@ export const version = {
   },
 };
 
-export const dishes = {
+export const login = {
   default: Immutable.fromJS({}),
   persist: true,
   actions: {
-    UPDATE_DISHES_WITH_ID: {
-      inputs: ['id', 'list'],
-      reducer: (state, {payload}) =>
-        state.mergeIn([payload.id], {
-          list: payload.list,
-          updatedAt: Date.now(),
-        }),
+    UPDATE_LOGIN_STATUS: {
+      // inputs: ['id', 'list'],
+      reducer: (state, {payload}) => {
+        console.log('payload', payload);
+        return state.set('loginStatus', payload);
+      },
     },
     CLEAR_DISHES: {
       reducer: () => Immutable.fromJS({}),
@@ -35,7 +34,7 @@ export const search = {
     recent: [],
     hot: [],
   }),
-  persist: true,
+  persist: false,
   actions: {
     ADD_RECENT_SEARCK_KEY: {
       reducer: (state, {payload}) => {
@@ -61,7 +60,7 @@ export const search = {
 
 export const cook = {
   default: Immutable.fromJS({}),
-  persist: true,
+  persist: false,
   actions: {
     UPDATE_COOK: {
       reducer: (state, {payload}) =>
@@ -78,7 +77,7 @@ export const cook = {
 
 export const collections = {
   default: Immutable.fromJS([]),
-  persist: true,
+  persist: false,
   actions: {
     CHANGE_COLLECTIONS_STATE: {
       reducer: (state, {payload}) => {

@@ -1,5 +1,6 @@
 import {View, Text, Button} from 'react-native';
 import React from 'react';
+import {dispatch} from '../../redux';
 
 interface IProps {
   navigation: any;
@@ -7,6 +8,10 @@ interface IProps {
 
 export default function HomeScreen(props: IProps) {
   const {navigation} = props;
+
+  const onPress = () => {
+    dispatch('UPDATE_LOGIN_STATUS', false);
+  };
   return (
     <View>
       <Text>HomeScreen</Text>
@@ -14,6 +19,7 @@ export default function HomeScreen(props: IProps) {
         title="Go to Details"
         onPress={() => navigation.navigate('Profile')}
       />
+      <Button title="Go to Login" onPress={onPress} />
     </View>
   );
 }
