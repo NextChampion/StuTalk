@@ -28,6 +28,7 @@
 		600E2BA0293C977D005611A5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B90293C977D005611A5 /* EvilIcons.ttf */; };
 		600E2BA1293C977D005611A5 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B91293C977D005611A5 /* SimpleLineIcons.ttf */; };
 		600E2BA2293C977D005611A5 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B92293C977D005611A5 /* MaterialIcons.ttf */; };
+		600E2BA4293CA99A005611A5 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600E2BA3293CA99A005611A5 /* BootSplash.storyboard */; };
 		606B92BB28FB9BDA0079A141 /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606B92BA28FB9BDA0079A141 /* hermes.xcframework */; };
 		606B92BC28FB9BDA0079A141 /* hermes.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 606B92BA28FB9BDA0079A141 /* hermes.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7699B88040F8A987B510C191 /* libPods-StuTalk-StuTalkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-StuTalk-StuTalkTests.a */; };
@@ -89,6 +90,7 @@
 		600E2B90293C977D005611A5 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		600E2B91293C977D005611A5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		600E2B92293C977D005611A5 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		600E2BA3293CA99A005611A5 /* BootSplash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BootSplash.storyboard; sourceTree = "<group>"; };
 		606B92BA28FB9BDA0079A141 /* hermes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = hermes.xcframework; path = "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StuTalk/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-StuTalk-StuTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk-StuTalkTests.release.xcconfig"; path = "Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				600E2BA3293CA99A005611A5 /* BootSplash.storyboard */,
 				600E2B82293C977D005611A5 /* Fonts */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -322,6 +325,7 @@
 				600E2B93293C977D005611A5 /* Fontisto.ttf in Resources */,
 				600E2B9E293C977D005611A5 /* FontAwesome.ttf in Resources */,
 				600E2B9A293C977D005611A5 /* Foundation.ttf in Resources */,
+				600E2BA4293CA99A005611A5 /* BootSplash.storyboard in Resources */,
 				600E2B9D293C977D005611A5 /* FontAwesome5_Regular.ttf in Resources */,
 				600E2B9B293C977D005611A5 /* Ionicons.ttf in Resources */,
 				600E2BA0293C977D005611A5 /* EvilIcons.ttf in Resources */,
