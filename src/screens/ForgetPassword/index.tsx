@@ -1,5 +1,5 @@
 import {Text, Button} from 'react-native';
-import React from 'react';
+import React, {FC} from 'react';
 import {dispatch} from '../../redux';
 import PageContainer from '../components/PageContainer';
 
@@ -8,7 +8,7 @@ interface IProps {
   login: any;
 }
 
-function ForgetPasswordScreen(props: IProps) {
+const ForgetPasswordScreen: FC<IProps> = props => {
   const {login} = props;
   const handleLogin = () => {
     const loginStatus = login.get('loginStatus');
@@ -22,7 +22,7 @@ function ForgetPasswordScreen(props: IProps) {
       <Button title="Go to Main" onPress={handleLogin} />
     </PageContainer>
   );
-}
+};
 
 // export default LoginScreen;
-export default ForgetPasswordScreen;
+export default ForgetPasswordScreen as any;

@@ -13,7 +13,7 @@ const Stack = createNativeStackNavigator();
 
 interface IProps {
   login: {
-    loginStatus: boolean;
+    get: (key: 'loginStatus') => boolean;
   };
 }
 

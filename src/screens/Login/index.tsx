@@ -46,7 +46,7 @@ function LoginScreen(props: IProps) {
 }
 
 // export default LoginScreen;
-export default LoginScreen;
+export default LoginScreen as any;
 
 const styles = StyleSheet.create({
   logoContainer: {
