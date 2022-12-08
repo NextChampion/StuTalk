@@ -1,10 +1,10 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import {dispatch} from '../../redux';
-import PageContainer from '../components/PageContainer';
-import Logo from '../components/Logo';
-import StuInput from '../components/StuInput';
-import StuButton from '../components/StuButton';
+import PageContainer from '../../components/PageContainer';
+import Logo from '../../components/Logo';
+import StuInput from '../../components/StuInput';
+import StuButton from '../../components/StuButton';
 
 interface IProps {
   navigation: any;

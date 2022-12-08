@@ -1,6 +1,6 @@
 import React, {memo, FC, ReactNode, useRef} from 'react';
 import {StyleSheet, ScrollView, ViewStyle} from 'react-native';
-import UI from '../../../UI';
+import UI from '../../UI';
 
 interface IProps {
   scroll?: Boolean;

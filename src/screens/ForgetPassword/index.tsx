@@ -1,7 +1,7 @@
 import {Text, Button} from 'react-native';
 import React, {FC} from 'react';
 import {dispatch} from '../../redux';
-import PageContainer from '../components/PageContainer';
+import PageContainer from '../../components/PageContainer';
 
 interface IProps {
   navigation: any;
