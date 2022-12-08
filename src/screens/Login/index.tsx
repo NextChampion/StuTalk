@@ -21,6 +21,10 @@ function LoginScreen(props: IProps) {
     navigation.navigate('Register');
   };
 
+  const onForgetPasswordPress = () => {
+    navigation.navigate('ForgetPassword');
+  };
+
   return (
     <PageContainer>
       <View style={styles.logoContainer}>
@@ -32,6 +36,9 @@ function LoginScreen(props: IProps) {
         <View style={styles.buttonContainer}>
           <StuButton title="登录" onPress={handleLogin} />
           <StuButton title="注册" onPress={handleRegister} />
+        </View>
+        <View style={styles.forgetPsw}>
+          <StuButton title="忘记密码" onPress={onForgetPasswordPress} />
         </View>
       </View>
     </PageContainer>
@@ -58,5 +65,9 @@ const styles = StyleSheet.create({
     marginTop: 10,
     flexDirection: 'row',
     justifyContent: 'space-around',
+  },
+  forgetPsw: {
+    marginTop: 10,
+    alignItems: 'flex-end',
   },
 });
