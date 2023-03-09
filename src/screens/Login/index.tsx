@@ -3,8 +3,7 @@ import React from 'react';
 import {dispatch} from '../../redux';
 import PageContainer from '../../components/PageContainer';
 import Logo from '../../components/Logo';
-import StuInput from '../../components/StuInput';
-import {Button} from 'native-base';
+import {Button, Input} from 'native-base';
 interface IProps {
   navigation: any;
   login: any;
@@ -30,8 +29,8 @@ function LoginScreen(props: IProps) {
         <Logo />
       </View>
       <View style={styles.content}>
-        <StuInput placeholder="请输入账号" />
-        <StuInput style={styles.pswInput} placeholder="请输入密码" />
+        <Input placeholder="请输入账号" />
+        <Input placeholder="请输入密码" />
         <View style={styles.buttonContainer}>
           <Button onPress={handleLogin}>登录</Button>
           <Button onPress={handleRegister}>注册</Button>
@@ -57,9 +56,7 @@ const styles = StyleSheet.create({
     flex: 2,
     paddingHorizontal: 20,
   },
-  pswInput: {
-    marginTop: 10,
-  },
+  pswInput: {},
   buttonContainer: {
     marginTop: 10,
     flexDirection: 'row',
