@@ -1,5 +1,16 @@
-import {Text, Button} from 'react-native';
 import React, {FC} from 'react';
+import {
+  Box,
+  Button,
+  Center,
+  FormControl,
+  Heading,
+  HStack,
+  Input,
+  Link,
+  Text,
+  VStack,
+} from 'native-base';
 import {dispatch} from '../../redux';
 import PageContainer from '../../components/PageContainer';
 
@@ -9,17 +20,58 @@ interface IProps {
 }
 
 const ForgetPasswordScreen: FC<IProps> = props => {
-  const {login} = props;
+  const {navigation} = props;
   const handleLogin = () => {
-    const loginStatus = login.get('loginStatus');
-    console.log('loginStatus:', loginStatus);
     dispatch('UPDATE_LOGIN_STATUS', true);
+  };
+
+  const handleRegister = () => {
+    navigation.navigate('Register');
+  };
+
+  const onForgetPasswordPress = () => {
+    navigation.navigate('ForgetPassword');
   };
 
   return (
     <PageContainer>
-      <Text>LoginScreen</Text>
-      <Button title="Go to Main" onPress={handleLogin} />
+      <Center w="100%">
+        <Box safeArea p="2" py="8" w="90%" maxW="290">
+          <Heading
+            size="lg"
+            fontWeight="600"
+            color="coolGray.800"
+            _dark={{
+              color: 'warmGray.50',
+            }}>
+            Welcome
+          </Heading>
+          <Heading
+            mt="1"
+            _dark={{
+              color: 'warmGray.200',
+            }}
+            color="coolGray.600"
+            fontWeight="medium"
+            size="xs">
+            Sign in to continue!
+          </Heading>
+
+          <VStack space={3} mt="5">
+            <FormControl>
+              <FormControl.Label>Email ID</FormControl.Label>
+              <Input />
+            </FormControl>
+            <FormControl>
+              <FormControl.Label>Password</FormControl.Label>
+              <Input type="password" />
+            </FormControl>
+            <Button mt="2" colorScheme="indigo" onPress={handleLogin}>
+              登录
+            </Button>
+          </VStack>
+        </Box>
+      </Center>
     </PageContainer>
   );
 };
