@@ -3,7 +3,18 @@ import React from 'react';
 import {dispatch} from '../../redux';
 import PageContainer from '../../components/PageContainer';
 import Logo from '../../components/Logo';
-import {Button, Input} from 'native-base';
+import {
+  Box,
+  Button,
+  Center,
+  FormControl,
+  Heading,
+  HStack,
+  Input,
+  Link,
+  Text,
+  VStack,
+} from 'native-base';
 interface IProps {
   navigation: any;
   login: any;
@@ -25,45 +36,77 @@ function LoginScreen(props: IProps) {
 
   return (
     <PageContainer>
-      <View style={styles.logoContainer}>
-        <Logo />
-      </View>
-      <View style={styles.content}>
-        <Input placeholder="请输入账号" />
-        <Input placeholder="请输入密码" />
-        <View style={styles.buttonContainer}>
-          <Button onPress={handleLogin}>登录</Button>
-          <Button onPress={handleRegister}>注册</Button>
-        </View>
-        <View style={styles.forgetPsw}>
-          <Button onPress={onForgetPasswordPress}>忘记密码</Button>
-        </View>
-      </View>
+      <Center w="100%">
+        <Box safeArea p="2" py="8" w="90%" maxW="290">
+          <Heading
+            size="lg"
+            fontWeight="600"
+            color="coolGray.800"
+            _dark={{
+              color: 'warmGray.50',
+            }}>
+            Welcome
+          </Heading>
+          <Heading
+            mt="1"
+            _dark={{
+              color: 'warmGray.200',
+            }}
+            color="coolGray.600"
+            fontWeight="medium"
+            size="xs">
+            Sign in to continue!
+          </Heading>
+
+          <VStack space={3} mt="5">
+            <FormControl>
+              <FormControl.Label>Email ID</FormControl.Label>
+              <Input />
+            </FormControl>
+            <FormControl>
+              <FormControl.Label>Password</FormControl.Label>
+              <Input type="password" />
+              <Link
+                _text={{
+                  fontSize: 'xs',
+                  fontWeight: '500',
+                  color: 'indigo.500',
+                }}
+                alignSelf="flex-end"
+                onPress={onForgetPasswordPress}
+                mt="1">
+                忘记密码?
+              </Link>
+            </FormControl>
+            <Button mt="2" colorScheme="indigo" onPress={handleLogin}>
+              登录
+            </Button>
+            <HStack mt="6" justifyContent="center">
+              <Text
+                fontSize="sm"
+                color="coolGray.600"
+                _dark={{
+                  color: 'warmGray.200',
+                }}>
+                I'm a new user.{' '}
+              </Text>
+              <Link
+                _text={{
+                  color: 'indigo.500',
+                  fontWeight: 'medium',
+                  fontSize: 'sm',
+                }}
+                onPress={handleRegister}
+                href="">
+                注册账号
+              </Link>
+            </HStack>
+          </VStack>
+        </Box>
+      </Center>
     </PageContainer>
   );
 }
 
 // export default LoginScreen;
 export default LoginScreen as any;
-
-const styles = StyleSheet.create({
-  logoContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  content: {
-    flex: 2,
-    paddingHorizontal: 20,
-  },
-  pswInput: {},
-  buttonContainer: {
-    marginTop: 10,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  },
-  forgetPsw: {
-    marginTop: 10,
-    alignItems: 'flex-end',
-  },
-});
