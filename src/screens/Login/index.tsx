@@ -4,8 +4,7 @@ import {dispatch} from '../../redux';
 import PageContainer from '../../components/PageContainer';
 import Logo from '../../components/Logo';
 import StuInput from '../../components/StuInput';
-import StuButton from '../../components/StuButton';
-
+import {Button} from 'native-base';
 interface IProps {
   navigation: any;
   login: any;
@@ -34,11 +33,11 @@ function LoginScreen(props: IProps) {
         <StuInput placeholder="请输入账号" />
         <StuInput style={styles.pswInput} placeholder="请输入密码" />
         <View style={styles.buttonContainer}>
-          <StuButton title="登录" onPress={handleLogin} />
-          <StuButton title="注册" onPress={handleRegister} />
+          <Button onPress={handleLogin}>登录</Button>
+          <Button onPress={handleRegister}>注册</Button>
         </View>
         <View style={styles.forgetPsw}>
-          <StuButton title="忘记密码" onPress={onForgetPasswordPress} />
+          <Button onPress={onForgetPasswordPress}>忘记密码</Button>
         </View>
       </View>
     </PageContainer>

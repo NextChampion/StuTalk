@@ -3,7 +3,7 @@
 import React, {useEffect, useState} from 'react';
 import MainNavigator from './src/navigator';
 import {store, onLoadRedux, Provider} from './src/redux';
-
+import {NativeBaseProvider} from 'native-base';
 function App() {
   const [loaded, setLoaded] = useState<boolean>(false);
 
@@ -16,7 +16,9 @@ function App() {
   }
   return (
     <Provider store={store}>
-      <MainNavigator />
+      <NativeBaseProvider>
+        <MainNavigator />
+      </NativeBaseProvider>
     </Provider>
   );
 }
