@@ -17,10 +17,14 @@ function TabNavigator() {
         component={HomeScreen}
         options={{
           tabBarIcon: ({color}) => {
-            return <Icon color={color} size={30} name={'home'} />;
+            return <Icon color={color} size={26} name={'home'} />;
           },
           tabBarLabel: ({color}) => {
-            return <Text color={color}>首页</Text>;
+            return (
+              <Text color={color} fontSize="xs">
+                首页
+              </Text>
+            );
           },
         }}
       />
@@ -29,10 +33,14 @@ function TabNavigator() {
         component={SettingsScreen}
         options={{
           tabBarIcon: ({color}) => {
-            return <Icon color={color} size={30} name={'cog'} />;
+            return <Icon color={color} size={26} name={'cog'} />;
           },
           tabBarLabel: ({color}) => {
-            return <Text color={color}>广场</Text>;
+            return (
+              <Text color={color} fontSize="xs">
+                广场
+              </Text>
+            );
           },
         }}
       />
@@ -41,10 +49,14 @@ function TabNavigator() {
         component={ProfileScreen}
         options={{
           tabBarIcon: ({color}) => {
-            return <Icon color={color} size={30} name={'user'} />;
+            return <Icon color={color} size={26} name={'user'} />;
           },
           tabBarLabel: ({color}) => {
-            return <Text color={color}>我的</Text>;
+            return (
+              <Text color={color} fontSize="xs">
+                我的
+              </Text>
+            );
           },
         }}
       />
