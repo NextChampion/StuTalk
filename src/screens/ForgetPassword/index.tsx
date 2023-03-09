@@ -5,10 +5,7 @@ import {
   Center,
   FormControl,
   Heading,
-  HStack,
   Input,
-  Link,
-  Text,
   VStack,
 } from 'native-base';
 import {dispatch} from '../../redux';
@@ -19,18 +16,9 @@ interface IProps {
   login: any;
 }
 
-const ForgetPasswordScreen: FC<IProps> = props => {
-  const {navigation} = props;
+const ForgetPasswordScreen: FC<IProps> = () => {
   const handleLogin = () => {
     dispatch('UPDATE_LOGIN_STATUS', true);
-  };
-
-  const handleRegister = () => {
-    navigation.navigate('Register');
-  };
-
-  const onForgetPasswordPress = () => {
-    navigation.navigate('ForgetPassword');
   };
 
   return (

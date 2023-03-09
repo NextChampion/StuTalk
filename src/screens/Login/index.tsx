@@ -1,8 +1,6 @@
-import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import {dispatch} from '../../redux';
 import PageContainer from '../../components/PageContainer';
-import Logo from '../../components/Logo';
 import {
   Box,
   Button,
