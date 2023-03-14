@@ -1,10 +1,7 @@
-import {View, Text, Button, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import React from 'react';
 
-import ScrollableTabView, {
-  ScrollableTabBar,
-} from '../../components/ScrollableTabView';
-import {dispatch} from '../../redux';
+import ScrollableTabView from '../../components/ScrollableTabView';
 import OldBoyScreen from '../OldBoy';
 import RecommmendScreen from '../Recommend';
 import HotListScreen from '../HotList';
@@ -14,8 +11,6 @@ interface IProps {
 }
 
 export default function HomeScreen(props: IProps) {
-  const {navigation} = props;
-
   return (
     <ScrollableTabView
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
