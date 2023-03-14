@@ -3,7 +3,8 @@ import React from 'react';
 import {dispatch} from '../../redux';
 
 interface IProps {
-  navigation: any;
+  navigation?: any;
+  tabLabel: string;
 }
 
 export default function RecommmendScreen(props: IProps) {

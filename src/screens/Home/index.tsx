@@ -1,7 +1,9 @@
-import {View, Text, Button} from 'react-native';
+import {View, Text, Button, StyleSheet} from 'react-native';
 import React from 'react';
 
-import ScrollableTabView from '../../components/ScrollableTabView';
+import ScrollableTabView, {
+  ScrollableTabBar,
+} from '../../components/ScrollableTabView';
 import {dispatch} from '../../redux';
 import OldBoyScreen from '../OldBoy';
 import RecommmendScreen from '../Recommend';
@@ -14,14 +16,24 @@ interface IProps {
 export default function HomeScreen(props: IProps) {
   const {navigation} = props;
 
-  const onPress = () => {
-    dispatch('UPDATE_LOGIN_STATUS', false);
-  };
   return (
-    <ScrollableTabView>
-      <OldBoyScreen tabLabel="React" />
-      <RecommmendScreen tabLabel="Flow" />
-      <HotListScreen tabLabel="Jest" />
+    <ScrollableTabView
+      tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
+      tabBarTextStyle={styles.tabBarTextStyle}
+      tabBarActiveTextColor="red">
+      <OldBoyScreen tabLabel="校友圈" />
+      <RecommmendScreen tabLabel="推荐" />
+      <HotListScreen tabLabel="热榜" />
     </ScrollableTabView>
   );
 }
+
+const styles = StyleSheet.create({
+  tabBarUnderlineStyle: {
+    backgroundColor: 'red',
+    width: 100,
+  },
+  tabBarTextStyle: {
+    fontSize: 16,
+  },
+});
