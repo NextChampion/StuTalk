@@ -1,4 +1,3 @@
-import {StyleSheet} from 'react-native';
 import React from 'react';
 import {
   Avatar,
@@ -15,7 +14,7 @@ interface IProps {
   tabLabel: string;
 }
 
-const MsgListScreen = () => {
+const MsgListScreen = (props: IProps) => {
   const data = [
     {
       id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',

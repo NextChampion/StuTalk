@@ -2,9 +2,6 @@ import {StyleSheet} from 'react-native';
 import React from 'react';
 
 import ScrollableTabView from '../../components/ScrollableTabView';
-import OldBoyScreen from '../OldBoy';
-import RecommmendScreen from '../Recommend';
-import HotListScreen from '../HotList';
 import MsgListScreen from '../MsgList';
 
 interface IProps {
@@ -17,9 +14,10 @@ export default function MessagesScreen() {
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
       tabBarTextStyle={styles.tabBarTextStyle}
       tabBarActiveTextColor="red">
-      <MsgListScreen tabLabel="校友圈" />
-      <MsgListScreen tabLabel="推荐" />
-      <MsgListScreen tabLabel="热榜" />
+      <MsgListScreen tabLabel="全部" />
+      <MsgListScreen tabLabel="主动沟通" />
+      <MsgListScreen tabLabel="好友消息" />
+      <MsgListScreen tabLabel="未读消息" />
     </ScrollableTabView>
   );
 }

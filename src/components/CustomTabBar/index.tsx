@@ -1,5 +1,5 @@
 import {Animated, StyleSheet, Text, View} from 'react-native';
-import React, {ReactNode} from 'react';
+import React, {PropsWithChildren, ReactNode} from 'react';
 import Button from '../ScrollableTabView/Button';
 
 interface IProps {
@@ -23,7 +23,7 @@ interface IProps {
   scrollValue: any;
 }
 
-const CustomTabBar = (props: IProps) => {
+const CustomTabBar: React.FC<PropsWithChildren<IProps>> = props => {
   const renderTabInner = (
     name: string,
     page: number,
