@@ -11,7 +11,7 @@ interface IProps {
   };
 }
 
-const BlogItem = (props: IProps) => {
+const ProfileCard = (props: IProps) => {
   const {data} = props;
 
   return (
@@ -118,6 +118,6 @@ const BlogItem = (props: IProps) => {
   );
 };
 
-export default memo(BlogItem);
+export default memo(ProfileCard);
 
 // const styles = StyleSheet.create({});
