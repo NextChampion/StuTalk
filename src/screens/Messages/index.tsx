@@ -5,6 +5,7 @@ import ScrollableTabView from '../../components/ScrollableTabView';
 import OldBoyScreen from '../OldBoy';
 import RecommmendScreen from '../Recommend';
 import HotListScreen from '../HotList';
+import MsgListScreen from '../MsgList';
 
 interface IProps {
   navigation: any;
@@ -16,9 +17,9 @@ export default function MessagesScreen() {
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
       tabBarTextStyle={styles.tabBarTextStyle}
       tabBarActiveTextColor="red">
-      <OldBoyScreen tabLabel="校友圈" />
-      <RecommmendScreen tabLabel="推荐" />
-      <HotListScreen tabLabel="热榜" />
+      <MsgListScreen tabLabel="校友圈" />
+      <MsgListScreen tabLabel="推荐" />
+      <MsgListScreen tabLabel="热榜" />
     </ScrollableTabView>
   );
 }
