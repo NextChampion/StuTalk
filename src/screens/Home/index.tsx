@@ -5,6 +5,8 @@ import ScrollableTabView from '../../components/ScrollableTabView';
 import OldBoyScreen from '../OldBoy';
 import RecommmendScreen from '../Recommend';
 import HotListScreen from '../HotList';
+import CustomTabBar from '../../components/CustomTabBar';
+import Colors from '../../ui/Colors';
 
 interface IProps {
   navigation: any;
@@ -15,7 +17,8 @@ export default function HomeScreen() {
     <ScrollableTabView
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
       tabBarTextStyle={styles.tabBarTextStyle}
-      tabBarActiveTextColor="red">
+      renderTabBar={(props: any) => <CustomTabBar {...props} />}
+      tabBarActiveTextColor={Colors.indigo[500]}>
       <OldBoyScreen tabLabel="校友圈" />
       <RecommmendScreen tabLabel="推荐" />
       <HotListScreen tabLabel="热榜" />
@@ -25,10 +28,11 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   tabBarUnderlineStyle: {
-    backgroundColor: 'red',
-    width: 100,
+    backgroundColor: Colors.indigo[500],
+    width: 60,
+    borderRadius: 2,
   },
   tabBarTextStyle: {
-    fontSize: 16,
+    fontSize: 18,
   },
 });

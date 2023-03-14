@@ -54,13 +54,6 @@ const CustomTabBar: React.FC<PropsWithChildren<IProps>> = props => {
 
   const containerWidth = props.containerWidth;
   const numberOfTabs = props.tabs.length;
-  const tabUnderlineStyle = {
-    position: 'absolute',
-    width: containerWidth / numberOfTabs,
-    height: 4,
-    backgroundColor: 'navy',
-    bottom: 0,
-  };
 
   const translateX = props.scrollValue.interpolate({
     inputRange: [0, 1],
@@ -80,13 +73,14 @@ const CustomTabBar: React.FC<PropsWithChildren<IProps>> = props => {
       })}
       <Animated.View
         style={[
-          tabUnderlineStyle,
+          styles.tabUnderLine,
+          {width: containerWidth / numberOfTabs},
           {
             transform: [{translateX}],
           },
-          props.underlineStyle,
-        ]}
-      />
+        ]}>
+        <View style={[styles.line, props.underlineStyle]} />
+      </Animated.View>
     </View>
   );
 };
@@ -98,7 +92,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingBottom: 10,
+    paddingBottom: 4,
   },
   tabs: {
     height: 50,
@@ -109,5 +103,17 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0,
     borderRightWidth: 0,
     borderColor: '#ccc',
+    width: 400,
+  },
+  tabUnderLine: {
+    position: 'absolute',
+    height: 4,
+    bottom: 4,
+    alignItems: 'center',
+  },
+  line: {
+    backgroundColor: 'yellow',
+    width: '100%',
+    height: '100%',
   },
 });
