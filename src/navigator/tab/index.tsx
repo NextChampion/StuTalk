@@ -7,6 +7,7 @@ import HomeScreen from '../../screens/Home';
 import SettingsScreen from '../../screens/Settings';
 import ProfileScreen from '../../screens/Profile';
 import ContactsScreen from '../../screens/Contacts';
+import MessagesScreen from '../../screens/Messages';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,7 +38,7 @@ function TabNavigator() {
         component={ContactsScreen}
         options={{
           tabBarIcon: ({color}) => {
-            return <Icon color={color} size={26} name={'users'} />;
+            return <Icon color={color} size={20} name={'users'} />;
           },
           tabBarLabel: ({color}) => {
             return (
@@ -59,6 +60,22 @@ function TabNavigator() {
             return (
               <Text color={color} fontSize="xs">
                 广场
+              </Text>
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name="Messages"
+        component={MessagesScreen}
+        options={{
+          tabBarIcon: ({color}) => {
+            return <Icon color={color} size={26} name={'comments'} />;
+          },
+          tabBarLabel: ({color}) => {
+            return (
+              <Text color={color} fontSize="xs">
+                消息
               </Text>
             );
           },
