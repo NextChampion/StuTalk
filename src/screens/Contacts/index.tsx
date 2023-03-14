@@ -1,26 +1,26 @@
 import {StyleSheet} from 'react-native';
 import React from 'react';
-import ScrollableTabView from '../../components/ScrollableTabView';
 
-import HotListScreen from '../HotList';
+import ScrollableTabView from '../../components/ScrollableTabView';
 import RecommmendScreen from '../Recommend';
+import HotListScreen from '../HotList';
+
 interface IProps {
   navigation: any;
-  tabLabel?: string;
 }
 
-export default function OldBoyScreen() {
+export default function ContactsScreen() {
   return (
     <ScrollableTabView
-      locked
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
       tabBarTextStyle={styles.tabBarTextStyle}
       tabBarActiveTextColor="red">
-      <RecommmendScreen tabLabel="推荐" />
-      <HotListScreen tabLabel="热榜" />
+      <RecommmendScreen tabLabel="人脉" />
+      <HotListScreen tabLabel="动态" />
     </ScrollableTabView>
   );
 }
+
 const styles = StyleSheet.create({
   tabBarUnderlineStyle: {
     backgroundColor: 'red',

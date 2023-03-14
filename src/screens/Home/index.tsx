@@ -10,7 +10,7 @@ interface IProps {
   navigation: any;
 }
 
-export default function HomeScreen(props: IProps) {
+export default function HomeScreen() {
   return (
     <ScrollableTabView
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}

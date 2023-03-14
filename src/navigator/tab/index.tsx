@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {Text} from 'native-base';
 
 import HomeScreen from '../../screens/Home';
 import SettingsScreen from '../../screens/Settings';
 import ProfileScreen from '../../screens/Profile';
-import {Text} from 'native-base';
+import ContactsScreen from '../../screens/Contacts';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,6 +27,22 @@ function TabNavigator() {
             return (
               <Text color={color} fontSize="xs">
                 首页
+              </Text>
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name="Contacts"
+        component={ContactsScreen}
+        options={{
+          tabBarIcon: ({color}) => {
+            return <Icon color={color} size={26} name={'users'} />;
+          },
+          tabBarLabel: ({color}) => {
+            return (
+              <Text color={color} fontSize="xs">
+                人脉
               </Text>
             );
           },
