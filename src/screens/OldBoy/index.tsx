@@ -2,10 +2,9 @@ import {StyleSheet} from 'react-native';
 import React from 'react';
 import ScrollableTabView from '../../components/ScrollableTabView';
 
-import HotListScreen from '../HotList';
-import RecommmendScreen from '../Recommend';
 import ScrollableTabBar from '../../components/ScrollableTabView/ScrollableTabBar';
 import Colors from '../../ui/Colors';
+import BlogListScreen from '../BlogList';
 interface IProps {
   navigation?: any;
   tabLabel: string;
@@ -21,12 +20,12 @@ export default function OldBoyScreen(props: IProps) {
         <ScrollableTabBar {...props} style={{borderWidth: 0}} />
       )}
       tabBarActiveTextColor={Colors.indigo[500]}>
-      <RecommmendScreen tabLabel="关注" />
-      <HotListScreen tabLabel="全部" />
-      <HotListScreen tabLabel="校内" />
-      <HotListScreen tabLabel="专业" />
-      <HotListScreen tabLabel="班级" />
-      <HotListScreen tabLabel="热榜4" />
+      <BlogListScreen tabLabel="关注" />
+      <BlogListScreen tabLabel="全部" />
+      <BlogListScreen tabLabel="校内" />
+      <BlogListScreen tabLabel="专业" />
+      <BlogListScreen tabLabel="班级" />
+      <BlogListScreen tabLabel="热榜4" />
     </ScrollableTabView>
   );
 }

@@ -7,6 +7,8 @@ import RecommmendScreen from '../Recommend';
 import HotListScreen from '../HotList';
 import CustomTabBar from '../../components/CustomTabBar';
 import Colors from '../../ui/Colors';
+import PageContainer from '../../components/PageContainer';
+import UI from '../../../UI';
 
 interface IProps {
   navigation: any;
@@ -15,6 +17,7 @@ interface IProps {
 export default function HomeScreen() {
   return (
     <ScrollableTabView
+      style={styles.container}
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
       tabBarTextStyle={styles.tabBarTextStyle}
       renderTabBar={(props: any) => <CustomTabBar {...props} />}
@@ -27,6 +30,10 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    paddingTop: 44,
+    backgroundColor: UI.color.white1,
+  },
   tabBarUnderlineStyle: {
     backgroundColor: Colors.indigo[500],
     width: 60,

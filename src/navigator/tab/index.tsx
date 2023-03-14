@@ -31,6 +31,7 @@ function TabNavigator() {
               </Text>
             );
           },
+          headerShown: false,
         }}
       />
       <Tab.Screen
