@@ -1,6 +1,6 @@
 import {NativeModules, StatusBar, Platform} from 'react-native';
 
-let statusBarHeight: number;
+let statusBarHeight: number = 44;
 
 function getHeight() {
   if (Platform.OS === 'ios') {

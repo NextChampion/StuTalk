@@ -6,7 +6,7 @@ import {getStatusBarHeight} from '../../ui/Sizes';
 
 interface IProps {
   leftItem?: ReactElement;
-  rightItem?: ReactElement;
+  rightItem?: ReactElement | null;
   titleView?: ReactElement;
   title?: string;
   height?: number;
@@ -28,9 +28,9 @@ const NavHeader: React.FC<PropsWithChildren<IProps>> = props => {
     isAbsolute,
     title,
     border,
-    displayTitle,
+    displayTitle = true,
   } = props;
-
+  const StatusBarHeight = getStatusBarHeight();
   const renderTitle = () => {
     if (!displayTitle) {
       return <View />;
@@ -39,14 +39,16 @@ const NavHeader: React.FC<PropsWithChildren<IProps>> = props => {
       return titleView;
     }
     return (
-      <Center height={'100%'} width={'100%'}>
-        <Heading>{title || '标题'}</Heading>
+      <Center height={'100%'}>
+        <Heading size={'sm'}>{title || '标题'}</Heading>
       </Center>
     );
   };
   return (
     <View style={isAbsolute ? styles.absolute : null}>
-      {hideStatusBar ? null : <View style={styles.statusBar} />}
+      {hideStatusBar ? null : (
+        <View style={[styles.statusBar, {height: StatusBarHeight}]} />
+      )}
       {hide ? null : (
         <Box
           style={[
@@ -66,8 +68,6 @@ const NavHeader: React.FC<PropsWithChildren<IProps>> = props => {
 
 export default NavHeader;
 
-const StatusBarHeight = getStatusBarHeight();
-
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
@@ -82,7 +82,6 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   statusBar: {
-    height: StatusBarHeight,
     backgroundColor: UI.color.bg1,
   },
   border: {

@@ -29,7 +29,7 @@ export default function ProfileScreen() {
   };
   return (
     <PageContainer>
-      <NavHeader title="profile" rightItem={renderRightItem()} />
+      <NavHeader title="Profile" rightItem={renderRightItem()} />
       <ProfileCard data={user} />
       <Text>ProfileScreen</Text>
     </PageContainer>

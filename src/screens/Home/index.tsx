@@ -7,7 +7,6 @@ import RecommmendScreen from '../Recommend';
 import HotListScreen from '../HotList';
 import CustomTabBar from '../../components/CustomTabBar';
 import Colors from '../../ui/Colors';
-import PageContainer from '../../components/PageContainer';
 import UI from '../../../UI';
 import {getStatusBarHeight} from '../../ui/Sizes';
 
@@ -16,9 +15,10 @@ interface IProps {
 }
 
 export default function HomeScreen() {
+  const StatusBarHeight = getStatusBarHeight();
   return (
     <ScrollableTabView
-      style={styles.container}
+      style={[styles.container, {paddingTop: StatusBarHeight}]}
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
       tabBarTextStyle={styles.tabBarTextStyle}
       renderTabBar={(props: any) => <CustomTabBar {...props} />}
@@ -29,10 +29,8 @@ export default function HomeScreen() {
     </ScrollableTabView>
   );
 }
-const StatusBarHeight = getStatusBarHeight();
 const styles = StyleSheet.create({
   container: {
-    paddingTop: StatusBarHeight,
     backgroundColor: UI.color.white1,
   },
   tabBarUnderlineStyle: {
