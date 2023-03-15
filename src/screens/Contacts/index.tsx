@@ -2,12 +2,12 @@ import {StyleSheet} from 'react-native';
 import React from 'react';
 
 import ScrollableTabView from '../../components/ScrollableTabView';
-import RecommmendScreen from '../Recommend';
 import HotListScreen from '../HotList';
 import {getStatusBarHeight} from '../../ui/Sizes';
 import UI from '../../../UI';
 import CustomTabBar from '../../components/CustomTabBar';
 import Colors from '../../ui/Colors';
+import ContractListScreen from '../ContractList';
 
 interface IProps {
   navigation: any;
@@ -23,7 +23,7 @@ export default function ContactsScreen() {
       tabBarTextStyle={styles.tabBarTextStyle}
       renderTabBar={(props: any) => <CustomTabBar {...props} />}
       tabBarActiveTextColor={Colors.indigo[500]}>
-      <RecommmendScreen tabLabel="人脉" />
+      <ContractListScreen tabLabel="人脉" />
       <HotListScreen tabLabel="动态" />
     </ScrollableTabView>
   );
