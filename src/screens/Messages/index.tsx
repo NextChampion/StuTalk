@@ -13,22 +13,24 @@ interface IProps {
 
 export default function MessagesScreen() {
   return (
-    <PageContainer>
-      <ScrollableTabView
-        tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
-        tabBarTextStyle={styles.tabBarTextStyle}
-        renderTabBar={() => <CustomTabBar />}
-        tabBarActiveTextColor={Colors.indigo[500]}>
-        <MsgListScreen tabLabel="全部" />
-        <MsgListScreen tabLabel="主动沟通" />
-        <MsgListScreen tabLabel="好友消息" />
-        <MsgListScreen tabLabel="未读消息" />
-      </ScrollableTabView>
-    </PageContainer>
+    <ScrollableTabView
+      style={styles.container}
+      tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
+      tabBarTextStyle={styles.tabBarTextStyle}
+      renderTabBar={() => <CustomTabBar />}
+      tabBarActiveTextColor={Colors.indigo[500]}>
+      <MsgListScreen tabLabel="全部" />
+      <MsgListScreen tabLabel="主动沟通" />
+      <MsgListScreen tabLabel="好友消息" />
+      <MsgListScreen tabLabel="未读消息" />
+    </ScrollableTabView>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#fff',
+  },
   tabBarUnderlineStyle: {
     backgroundColor: Colors.indigo[500],
     width: 36,

@@ -2,6 +2,7 @@ import {StyleSheet, View} from 'react-native';
 import React, {PropsWithChildren, ReactElement} from 'react';
 import UI from '../../../UI';
 import {Box, Center, Heading} from 'native-base';
+import {getStatusBarHeight} from '../../ui/Sizes';
 
 interface IProps {
   leftItem?: ReactElement;
@@ -65,6 +66,8 @@ const NavHeader: React.FC<PropsWithChildren<IProps>> = props => {
 
 export default NavHeader;
 
+const StatusBarHeight = getStatusBarHeight();
+
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
@@ -79,7 +82,7 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   statusBar: {
-    height: UI.IS_IPHONE_X ? 44 : 20,
+    height: StatusBarHeight,
     backgroundColor: UI.color.bg1,
   },
   border: {

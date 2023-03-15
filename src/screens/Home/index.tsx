@@ -9,6 +9,7 @@ import CustomTabBar from '../../components/CustomTabBar';
 import Colors from '../../ui/Colors';
 import PageContainer from '../../components/PageContainer';
 import UI from '../../../UI';
+import {getStatusBarHeight} from '../../ui/Sizes';
 
 interface IProps {
   navigation: any;
@@ -28,10 +29,10 @@ export default function HomeScreen() {
     </ScrollableTabView>
   );
 }
-
+const StatusBarHeight = getStatusBarHeight();
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 44,
+    paddingTop: StatusBarHeight,
     backgroundColor: UI.color.white1,
   },
   tabBarUnderlineStyle: {
