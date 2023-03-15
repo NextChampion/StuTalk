@@ -96,6 +96,7 @@ function TabNavigator() {
               </Text>
             );
           },
+          headerShown: false,
         }}
       />
     </Tab.Navigator>

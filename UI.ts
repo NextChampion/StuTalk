@@ -1,9 +1,10 @@
 import {Dimensions} from 'react-native';
 
 const {width, height} = Dimensions.get('window');
+
 const IS_IPHONE_SE = width < 350;
 const IS_IPAD_PRO_97 = height === 480;
-const IS_IPHONE_X = height === 812 || height === 896;
+const IS_IPHONE_X = height === 812 || height === 896 || height === 852;
 const IS_IPHONE_PLUS = height === 736;
 
 let unit;
@@ -20,6 +21,8 @@ const color = {
   unselected: '#cdcdcd',
   border: '#D8D7DC',
   disable: '#E6EFFA',
+
+  transparent: 'transparent',
 
   bg1: '#FFFFFF', // '#FCFDFF',
   bg2: '#F5F9FD',

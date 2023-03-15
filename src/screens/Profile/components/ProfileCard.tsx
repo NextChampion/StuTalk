@@ -1,5 +1,14 @@
 import React, {memo} from 'react';
-import {Avatar, Box, Button, HStack, Spacer, Text, VStack} from 'native-base';
+import {
+  Avatar,
+  Box,
+  Divider,
+  HStack,
+  Pressable,
+  Spacer,
+  Text,
+  VStack,
+} from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
 interface IProps {
@@ -17,10 +26,7 @@ const ProfileCard = (props: IProps) => {
   return (
     <Box
       borderBottomWidth="1"
-      //   _dark={{
-      //     borderColor: 'muted.50',
-      //   }}
-      style={{marginHorizontal: 10, marginBottom: 10}}
+      mx={4}
       rounded="lg"
       overflow="hidden"
       borderColor="coolGray.200"
@@ -36,83 +42,79 @@ const ProfileCard = (props: IProps) => {
       _light={{
         backgroundColor: 'gray.50',
       }}
-      //   borderColor="muted.800"
       pl="4"
       pr={['4', '5']}>
-      <VStack>
-        <HStack space={[2, 3]} justifyContent="space-between" py={2}>
-          <Avatar
-            size="48px"
-            source={{
-              uri: data.avatarUrl,
-            }}
-          />
-          <VStack>
-            <Text
-              _dark={{
-                color: 'warmGray.50',
-              }}
-              color="coolGray.800"
-              bold>
-              {data.fullName}
-            </Text>
-            <Text
-              color="coolGray.600"
-              _dark={{
-                color: 'warmGray.200',
-              }}>
-              {data.recentText}
-            </Text>
-          </VStack>
-          <Spacer />
+      <HStack space={[2, 3]} justifyContent="space-between" py={3}>
+        <Avatar
+          size={'lg'}
+          source={{
+            uri: data.avatarUrl,
+          }}
+          borderWidth={'1'}
+          borderColor={'gray.100'}
+        />
+        <VStack py={1} space={'3'}>
           <Text
-            fontSize="xs"
             _dark={{
               color: 'warmGray.50',
             }}
             color="coolGray.800"
-            alignSelf="flex-start">
-            {data.timeStamp}
+            bold>
+            {data.fullName}
           </Text>
-        </HStack>
-        <Text bold>Bold</Text>
-        <Text italic>Italic</Text>
-        <Text underline>Underline</Text>
-        <Text
-          highlight
-          _dark={{
-            color: 'coolgray.800',
+          <Text
+            color="coolGray.600"
+            _dark={{
+              color: 'warmGray.200',
+            }}>
+            {data.recentText}
+          </Text>
+        </VStack>
+        <Spacer />
+        <Icon size={10} name="caret-right" />
+      </HStack>
+      <HStack justifyContent={'space-around'} py={3} px={3}>
+        <Pressable
+          variant="ghost"
+          colorScheme="gray"
+          onPress={() => {
+            console.log('sssss');
           }}>
-          Highlighted
-        </Text>
-        <Text>
-          H<Text sub>2</Text>O
-        </Text>
-        <Text underline>Underline</Text>
-        <Text strikeThrough>StrikeThrough</Text>
-        <Text bold italic underline>
-          Bold, Italic & Underline
-        </Text>
-      </VStack>
-      <HStack space={3} justifyContent="space-between">
-        <Button
+          <VStack alignItems={'center'}>
+            <Text bold fontSize={'lg'}>
+              230
+            </Text>
+            <Text>好友数</Text>
+          </VStack>
+        </Pressable>
+        <Divider orientation="vertical" />
+        <Pressable
           variant="ghost"
           colorScheme="gray"
-          leftIcon={<Icon name="share-square" size={14} color={'gray'} />}>
-          Upload
-        </Button>
-        <Button
+          onPress={() => {
+            console.log('sssss');
+          }}>
+          <VStack alignItems={'center'}>
+            <Text bold fontSize={'lg'}>
+              230
+            </Text>
+            <Text>访客数</Text>
+          </VStack>
+        </Pressable>
+        <Divider orientation="vertical" />
+        <Pressable
           variant="ghost"
           colorScheme="gray"
-          leftIcon={<Icon name="comment-dots" size={14} color={'gray'} />}>
-          评论
-        </Button>
-        <Button
-          variant="ghost"
-          colorScheme="gray"
-          leftIcon={<Icon name="thumbs-up" size={14} color={'gray'} />}>
-          点赞
-        </Button>
+          onPress={() => {
+            console.log('sssss');
+          }}>
+          <VStack alignItems={'center'}>
+            <Text bold fontSize={'lg'}>
+              230
+            </Text>
+            <Text>我的内容</Text>
+          </VStack>
+        </Pressable>
       </HStack>
     </Box>
   );
