@@ -4,17 +4,25 @@ import React from 'react';
 import ScrollableTabView from '../../components/ScrollableTabView';
 import RecommmendScreen from '../Recommend';
 import HotListScreen from '../HotList';
+import {getStatusBarHeight} from '../../ui/Sizes';
+import UI from '../../../UI';
+import CustomTabBar from '../../components/CustomTabBar';
+import Colors from '../../ui/Colors';
 
 interface IProps {
   navigation: any;
 }
 
 export default function ContactsScreen() {
+  const StatusBarHeight = getStatusBarHeight();
+
   return (
     <ScrollableTabView
+      style={[styles.container, {paddingTop: StatusBarHeight}]}
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
       tabBarTextStyle={styles.tabBarTextStyle}
-      tabBarActiveTextColor="red">
+      renderTabBar={(props: any) => <CustomTabBar {...props} />}
+      tabBarActiveTextColor={Colors.indigo[500]}>
       <RecommmendScreen tabLabel="人脉" />
       <HotListScreen tabLabel="动态" />
     </ScrollableTabView>
@@ -22,11 +30,15 @@ export default function ContactsScreen() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: UI.color.white1,
+  },
   tabBarUnderlineStyle: {
-    backgroundColor: 'red',
-    width: 100,
+    backgroundColor: Colors.indigo[500],
+    width: 60,
+    borderRadius: 2,
   },
   tabBarTextStyle: {
-    fontSize: 16,
+    fontSize: 18,
   },
 });
