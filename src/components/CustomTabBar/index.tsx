@@ -3,27 +3,29 @@ import React, {PropsWithChildren, ReactNode} from 'react';
 import Button from '../ScrollableTabView/Button';
 
 interface IProps {
-  goToPage: () => void;
-  activeTab: number;
-  tabs: Array<any>;
-  backgroundColor: string;
-  activeTextColor: string;
-  inactiveTextColor: string;
-  textStyle: any;
-  tabStyle: any;
-  renderTab: (
+  goToPage?: () => void;
+  activeTab?: number;
+  tabs?: Array<any>;
+  backgroundColor?: string;
+  activeTextColor?: string;
+  inactiveTextColor?: string;
+  textStyle?: any;
+  tabStyle?: any;
+  renderTab?: (
     name: string,
     page: number,
     isTabActive: boolean,
     onPressHandler: () => void,
   ) => void;
-  underlineStyle: any;
-  style: any;
-  containerWidth: number;
-  scrollValue: any;
+  underlineStyle?: any;
+  style?: any;
+  containerWidth?: number;
+  scrollValue?: any;
+  border?: boolean;
 }
 
 const CustomTabBar: React.FC<PropsWithChildren<IProps>> = props => {
+  const {border} = props;
   const renderTabInner = (
     name: string,
     page: number,
@@ -63,6 +65,7 @@ const CustomTabBar: React.FC<PropsWithChildren<IProps>> = props => {
     <View
       style={[
         styles.tabs,
+        border ? styles.tabsBorder : null,
         {backgroundColor: props.backgroundColor},
         props.style,
       ]}>
@@ -98,12 +101,14 @@ const styles = StyleSheet.create({
     height: 50,
     flexDirection: 'row',
     justifyContent: 'space-around',
+    width: 400,
+  },
+  tabsBorder: {
     borderWidth: 1,
     borderTopWidth: 0,
     borderLeftWidth: 0,
     borderRightWidth: 0,
     borderColor: '#ccc',
-    width: 400,
   },
   tabUnderLine: {
     position: 'absolute',

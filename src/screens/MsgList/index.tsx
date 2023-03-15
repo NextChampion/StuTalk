@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Avatar,
-  Box,
-  FlatList,
-  Heading,
-  HStack,
-  Spacer,
-  Text,
-  VStack,
-} from 'native-base';
+import {Avatar, Box, FlatList, HStack, Spacer, Text, VStack} from 'native-base';
 
 interface IProps {
   tabLabel: string;
@@ -36,7 +27,8 @@ const MsgListScreen = (props: IProps) => {
       id: '58694a0f-3da1-471f-bd96-145571e29d72',
       fullName: 'Anci Barroco',
       timeStamp: '6:22 PM',
-      recentText: 'Good Day!',
+      recentText:
+        'Good Day!Good Day!Good Day!Good Day!Good Day!Good Day!Good Day!Good Day!Good Day!Good Day!Good Day!',
       avatarUrl: 'https://miro.medium.com/max/1400/0*0fClPmIScV5pTLoE.jpg',
     },
     {
@@ -57,30 +49,26 @@ const MsgListScreen = (props: IProps) => {
     },
   ];
   return (
-    <Box>
-      <Heading fontSize="xl" p="4" pb="3">
-        Inbox
-      </Heading>
-      <FlatList
-        data={data}
-        renderItem={({item}) => (
-          <Box
-            borderBottomWidth="1"
-            _dark={{
-              borderColor: 'muted.50',
-            }}
-            borderColor="muted.800"
-            pl={['0', '4']}
-            pr={['0', '5']}
-            py="2">
-            <HStack space={[2, 3]} justifyContent="space-between">
-              <Avatar
-                size="48px"
-                source={{
-                  uri: item.avatarUrl,
-                }}
-              />
-              <VStack>
+    <FlatList
+      data={data}
+      renderItem={({item}) => (
+        <Box
+          borderBottomWidth="1"
+          _dark={{
+            borderColor: 'muted.50',
+          }}
+          borderColor="muted.200"
+          px={4}
+          py="2">
+          <HStack justifyContent="space-between">
+            <Avatar
+              size="48px"
+              source={{
+                uri: item.avatarUrl,
+              }}
+            />
+            <VStack pl={2} space={'1.5'} flex={1}>
+              <HStack>
                 <Text
                   _dark={{
                     color: 'warmGray.50',
@@ -89,30 +77,31 @@ const MsgListScreen = (props: IProps) => {
                   bold>
                   {item.fullName}
                 </Text>
+                <Spacer />
                 <Text
-                  color="coolGray.600"
+                  fontSize="xs"
                   _dark={{
-                    color: 'warmGray.200',
-                  }}>
-                  {item.recentText}
+                    color: 'warmGray.50',
+                  }}
+                  color="coolGray.800">
+                  {item.timeStamp}
                 </Text>
-              </VStack>
-              <Spacer />
+              </HStack>
               <Text
-                fontSize="xs"
+                color="coolGray.600"
+                numberOfLines={1}
+                colorScheme={'danger'}
                 _dark={{
-                  color: 'warmGray.50',
-                }}
-                color="coolGray.800"
-                alignSelf="flex-start">
-                {item.timeStamp}
+                  color: 'warmGray.200',
+                }}>
+                {item.recentText}
               </Text>
-            </HStack>
-          </Box>
-        )}
-        keyExtractor={item => item.id}
-      />
-    </Box>
+            </VStack>
+          </HStack>
+        </Box>
+      )}
+      keyExtractor={item => item.id}
+    />
   );
 };
 

@@ -16,9 +16,7 @@ export default function OldBoyScreen(props: IProps) {
       locked
       tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
       tabBarTextStyle={styles.tabBarTextStyle}
-      renderTabBar={(props: any) => (
-        <ScrollableTabBar {...props} style={{borderWidth: 0}} />
-      )}
+      renderTabBar={() => <ScrollableTabBar style={{borderWidth: 0}} />}
       tabBarActiveTextColor={Colors.indigo[500]}>
       <BlogListScreen tabLabel="关注" />
       <BlogListScreen tabLabel="全部" />
