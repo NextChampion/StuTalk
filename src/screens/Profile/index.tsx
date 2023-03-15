@@ -3,6 +3,8 @@ import React from 'react';
 import PageContainer from '../../components/PageContainer';
 import ProfileCard from './components/ProfileCard';
 import NavHeader from '../../components/NavHeader';
+import Icon from 'react-native-vector-icons/FontAwesome5';
+import {Pressable} from 'native-base';
 
 export default function ProfileScreen() {
   const user = {
@@ -13,9 +15,21 @@ export default function ProfileScreen() {
     avatarUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   };
+
+  const onSettingPress = () => {
+    console.log('onSettingPress');
+  };
+
+  const renderRightItem = () => {
+    return (
+      <Pressable onPress={onSettingPress}>
+        <Icon name="cog" size={20} />
+      </Pressable>
+    );
+  };
   return (
     <PageContainer>
-      <NavHeader title="profile" />
+      <NavHeader title="profile" rightItem={renderRightItem()} />
       <ProfileCard data={user} />
       <Text>ProfileScreen</Text>
     </PageContainer>

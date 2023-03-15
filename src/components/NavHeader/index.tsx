@@ -1,7 +1,7 @@
 import {StyleSheet, View} from 'react-native';
 import React, {PropsWithChildren, ReactElement} from 'react';
 import UI from '../../../UI';
-import {Center, Heading} from 'native-base';
+import {Box, Center, Heading} from 'native-base';
 
 interface IProps {
   leftItem?: ReactElement;
@@ -32,7 +32,7 @@ const NavHeader: React.FC<PropsWithChildren<IProps>> = props => {
 
   const renderTitle = () => {
     if (!displayTitle) {
-      return null;
+      return <View />;
     }
     if (titleView) {
       return titleView;
@@ -47,16 +47,17 @@ const NavHeader: React.FC<PropsWithChildren<IProps>> = props => {
     <View style={isAbsolute ? styles.absolute : null}>
       {hideStatusBar ? null : <View style={styles.statusBar} />}
       {hide ? null : (
-        <View
+        <Box
           style={[
             styles.container,
             height ? {height} : null,
             border ? styles.border : null,
-          ]}>
+          ]}
+          px={4}>
           {leftItem && leftItem}
           {renderTitle()}
           {rightItem && rightItem}
-        </View>
+        </Box>
       )}
     </View>
   );
