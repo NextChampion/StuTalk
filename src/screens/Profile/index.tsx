@@ -5,6 +5,7 @@ import ProfileCard from './components/ProfileCard';
 import NavHeader from '../../components/NavHeader';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {Pressable} from 'native-base';
+import CommunityService from './components/CommunityService';
 
 export default function ProfileScreen() {
   const user = {
@@ -31,6 +32,7 @@ export default function ProfileScreen() {
     <PageContainer>
       <NavHeader title="Profile" rightItem={renderRightItem()} />
       <ProfileCard data={user} />
+      <CommunityService />
       <Text>ProfileScreen</Text>
     </PageContainer>
   );
