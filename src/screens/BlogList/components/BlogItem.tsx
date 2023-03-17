@@ -99,19 +99,19 @@ const BlogItem = (props: IProps) => {
           variant="ghost"
           colorScheme="gray"
           leftIcon={<Icon name="share-square" size={14} color={'gray'} />}>
-          Upload
+          分享
         </Button>
         <Button
           variant="ghost"
           colorScheme="gray"
           leftIcon={<Icon name="comment-dots" size={14} color={'gray'} />}>
-          评论
+          4
         </Button>
         <Button
           variant="ghost"
           colorScheme="gray"
           leftIcon={<Icon name="thumbs-up" size={14} color={'gray'} />}>
-          点赞
+          3
         </Button>
       </HStack>
     </Box>
