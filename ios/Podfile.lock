@@ -302,6 +302,8 @@ PODS:
   - React-jsinspector (0.70.3)
   - React-logger (0.70.3):
     - glog
+  - react-native-pager-view (6.1.4):
+    - React-Core
   - react-native-safe-area-context (3.3.2):
     - React-Core
   - React-perflogger (0.70.3)
@@ -429,6 +431,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -508,6 +511,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-pager-view:
+    :path: "../node_modules/react-native-pager-view"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-perflogger:
@@ -578,6 +583,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 7e2e1772ef7b97168c880eeaf3749d8c145ffd6e
   React-jsinspector: 0553c9fe7218e1f127be070bd5a4d2fc19fb8190
   React-logger: cffcc09e8aba8a3014be8d18da7f922802e9f19e
+  react-native-pager-view: b58cb9e9f42f64e50cab3040815772c1d119a2e2
   react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
   React-perflogger: 082b4293f0b3914ff41da35a6c06ac4490fcbcc8
   React-RCTActionSheet: 83da3030deb5dea54b398129f56540a44e64d3ae
@@ -598,6 +604,6 @@ SPEC CHECKSUMS:
   Yoga: 2ed968a4f060a92834227c036279f2736de0fce3
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 11e2b7f0335b175670660769f851515e5a9c38e5
+PODFILE CHECKSUM: b5a0404f02991613641c8f1a380b7ada0cea7f14
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.11.3

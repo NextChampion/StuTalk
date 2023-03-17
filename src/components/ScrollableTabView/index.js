@@ -6,7 +6,7 @@ const PropTypes = require('prop-types');
 const {Dimensions, View, Animated, Platform, StyleSheet} = ReactNative;
 
 const TimerMixin = require('react-timer-mixin');
-const ViewPager = require('@react-native-community/viewpager');
+const ViewPager = require('react-native-pager-view');
 
 const SceneComponent = require('./SceneComponent');
 const DefaultTabBar = require('./DefaultTabBar');

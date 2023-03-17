@@ -1739,11 +1739,6 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/eslint-plugin/-/eslint-plugin-1.2.0.tgz#7d6d789ae8edf73dc9bed1246cd48277edea8066"
   integrity sha512-o6aam+0Ug1xGK3ABYmBm0B1YuEKfM/5kaoZO0eHbZwSpw9UzDX4G5y4Nx/K20FHqUmJHkZmLvOUFYwN4N+HqKA==
 
-"@react-native-community/viewpager@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.npmmirror.com/@react-native-community/viewpager/-/viewpager-3.3.0.tgz#e613747a43a31a6f3278f817ba96fdaaa7941f23"
-  integrity sha512-tyzh79l4t/hxiyS9QD3LRmWMs8KVkZzjrkQ8U8+8To1wmvVCBtp8BenvNsDLTBO7CpO/YmiThpmIdEZMr1WuVw==
-
 "@react-native/assets@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@react-native/assets/-/assets-1.0.0.tgz#c6f9bf63d274bafc8e970628de24986b30a55c8e"
@@ -6877,6 +6872,11 @@ react-native-gradle-plugin@^0.70.3:
   version "0.70.3"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz#cbcf0619cbfbddaa9128701aa2d7b4145f9c4fc8"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
+
+react-native-pager-view@^6.1.4:
+  version "6.1.4"
+  resolved "https://registry.npmmirror.com/react-native-pager-view/-/react-native-pager-view-6.1.4.tgz#3a63ebd1b72f81991157ea552bb9c887e529bc8c"
+  integrity sha512-fmTwgGwPxGCBusKAq7gHzm+s1Yp0qh5rKPoQszaCuxrb+76KgK4Qe82jJNPUp2xTZOKSw+FbJU2QahF8ncTl+w==
 
 react-native-safe-area-context@3.3.2:
   version "3.3.2"
