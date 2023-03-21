@@ -8,8 +8,10 @@ import ProfileScreen from '../../screens/Profile';
 import LoginScreen from '../../screens/Login';
 import ForgetPasswordScreen from '../../screens/ForgetPassword';
 import RegisterScreen from '../../screens/Register';
+import BlogContentScreen from '../../screens/BlogContent';
+import {RootStackParamList} from '../../types/navigator';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 interface IProps {
   login: {
@@ -47,6 +49,13 @@ function MainStackNavigator(props: IProps) {
             }}
           />
           <Stack.Screen name="Profile" component={ProfileScreen} />
+          <Stack.Screen
+            name="BlogContent"
+            component={BlogContentScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
         </>
       )}
     </Stack.Navigator>

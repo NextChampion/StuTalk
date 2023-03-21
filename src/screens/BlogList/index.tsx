@@ -2,12 +2,17 @@ import React from 'react';
 import {FlatList} from 'native-base';
 import BlogItem from './components/BlogItem';
 import {StyleSheet} from 'react-native';
+import {BlogContent} from '../../types';
+import {useNavigation} from '@react-navigation/native';
 
 interface IProps {
   tabLabel: string;
 }
 
 const BlogListScreen = (props: IProps) => {
+  const navigation = useNavigation();
+  console.log('navigation:', navigation);
+
   const data = [
     {
       id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
@@ -49,11 +54,18 @@ const BlogListScreen = (props: IProps) => {
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU',
     },
   ];
+
+  const onItemPress = (info: BlogContent) => {
+    console.log('onItemPress:', info);
+    navigation.navigate('BlogContent', {
+      data: info,
+    });
+  };
   return (
     <FlatList
       style={styles.container}
       data={data}
-      renderItem={({item}) => <BlogItem data={item} />}
+      renderItem={({item}) => <BlogItem data={item} onPress={onItemPress} />}
       keyExtractor={item => item.id}
     />
   );
