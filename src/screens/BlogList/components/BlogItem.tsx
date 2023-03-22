@@ -11,14 +11,16 @@ import {
 } from 'native-base';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {BlogContent} from '../../../types';
+import Colors from '../../../ui/Colors';
 
 interface IProps {
   data: BlogContent;
   onPress?: (data: BlogContent) => void;
+  type?: 'list' | 'detail';
 }
 
 const BlogItem = (props: IProps) => {
-  const {data, onPress} = props;
+  const {data, onPress, type = 'list'} = props;
 
   const onClick = () => {
     if (onPress) {
@@ -26,18 +28,63 @@ const BlogItem = (props: IProps) => {
     }
   };
 
+  const renderRightTop = () => {
+    if (type === 'list') {
+      return (
+        <Text
+          fontSize="xs"
+          _dark={{
+            color: 'warmGray.50',
+          }}
+          color="coolGray.800"
+          alignSelf="flex-start">
+          {data.timeStamp}
+        </Text>
+      );
+    }
+    return (
+      <Button colorScheme={'indigo'} size={'xs'} h={'8'}>
+        关注
+      </Button>
+    );
+  };
+
+  const renderUndernameContent = () => {
+    // if (type === 'list') {
+    //   return (
+    //     <Text
+    //       color="coolGray.600"
+    //       _dark={{
+    //         color: 'warmGray.200',
+    //       }}>
+    //       {data.recentText}
+    //     </Text>
+    //   );
+    // }
+    return (
+      <Text
+        color="coolGray.600"
+        _dark={{
+          color: 'warmGray.200',
+        }}>
+        {data.timeStamp}
+      </Text>
+    );
+  };
+
   return (
     <Pressable onPress={onClick}>
       <Box
-        borderBottomWidth="1"
+        borderBottomWidth={type === 'list' ? '1' : '0'}
         //   _dark={{
         //     borderColor: 'muted.50',
         //   }}
-        style={{marginHorizontal: 10, marginBottom: 10}}
+        mx={type === 'list' ? 3 : 0}
+        mb={3}
         rounded="lg"
         overflow="hidden"
         borderColor="coolGray.200"
-        borderWidth="1"
+        borderWidth={type === 'list' ? '1' : '0'}
         _dark={{
           borderColor: 'coolGray.600',
           backgroundColor: 'gray.700',
@@ -51,7 +98,7 @@ const BlogItem = (props: IProps) => {
         }}
         //   borderColor="muted.800"
         pl="4"
-        pr={['4', '5']}>
+        pr={4}>
         <VStack>
           <HStack space={[2, 3]} justifyContent="space-between" py={2}>
             <Avatar
@@ -69,24 +116,10 @@ const BlogItem = (props: IProps) => {
                 bold>
                 {data.fullName}
               </Text>
-              <Text
-                color="coolGray.600"
-                _dark={{
-                  color: 'warmGray.200',
-                }}>
-                {data.recentText}
-              </Text>
+              {renderUndernameContent()}
             </VStack>
             <Spacer />
-            <Text
-              fontSize="xs"
-              _dark={{
-                color: 'warmGray.50',
-              }}
-              color="coolGray.800"
-              alignSelf="flex-start">
-              {data.timeStamp}
-            </Text>
+            {renderRightTop()}
           </HStack>
           <Text bold>Bold</Text>
           <Text italic>Italic</Text>
@@ -106,13 +139,18 @@ const BlogItem = (props: IProps) => {
           <Text bold italic underline>
             Bold, Italic & Underline
           </Text>
+          {type === 'detail' ? (
+            <Text mt={2} sub color={'gray.400'}>
+              发布于 上海
+            </Text>
+          ) : null}
         </VStack>
         <HStack space={3} justifyContent="space-between">
           <Button
             variant="ghost"
             colorScheme="gray"
             leftIcon={<Icon name="share-square" size={14} color={'gray'} />}>
-            Upload
+            分享
           </Button>
           <Button
             variant="ghost"

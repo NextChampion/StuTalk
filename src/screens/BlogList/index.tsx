@@ -65,7 +65,9 @@ const BlogListScreen = (props: IProps) => {
     <FlatList
       style={styles.container}
       data={data}
-      renderItem={({item}) => <BlogItem data={item} onPress={onItemPress} />}
+      renderItem={({item}) => (
+        <BlogItem data={item} onPress={onItemPress} type="list" />
+      )}
       keyExtractor={item => item.id}
     />
   );
