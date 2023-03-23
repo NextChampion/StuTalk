@@ -184,7 +184,7 @@ const BlogItem = (props: IProps) => {
   const {action_bar} = common || {};
   const {comment_cnt, like_cnt, share_cnt} = action_bar || {};
 
-  const {author_info, time, pics} = style35 || {};
+  const {author_info, time, pics, global_topics} = style35 || {};
   const {name, avatar, compos} = author_info || {};
   const onClick = () => {
     if (onPress) {
@@ -286,6 +286,21 @@ const BlogItem = (props: IProps) => {
             </VStack>
             <Spacer />
             {renderRightTop()}
+          </HStack>
+          <HStack my={1}>
+            {global_topics?.map(topic => (
+              <HStack
+                alignItems={'center'}
+                backgroundColor={'indigo.100'}
+                rounded={'xl'}
+                px={2}
+                py={0}>
+                <Icon size={14} color={Colors.indigo[500]} name={'cog'} />
+                <Text color={'indigo.500'} ml={1}>
+                  {topic.name}
+                </Text>
+              </HStack>
+            ))}
           </HStack>
           <Text noOfLines={type === 'list' ? 3 : 0}>{text}</Text>
           <HStack>
