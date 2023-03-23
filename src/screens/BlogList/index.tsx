@@ -4,6 +4,7 @@ import BlogItem from './components/BlogItem';
 import {StyleSheet} from 'react-native';
 import {BlogContent} from '../../types';
 import {useNavigation} from '@react-navigation/native';
+import {BlogList} from '../../mock/blog';
 
 interface IProps {
   tabLabel: string;
@@ -64,7 +65,7 @@ const BlogListScreen = (props: IProps) => {
   return (
     <FlatList
       style={styles.container}
-      data={data}
+      data={BlogList.feeds}
       renderItem={({item}) => (
         <BlogItem data={item} onPress={onItemPress} type="list" />
       )}
