@@ -11,27 +11,25 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		600E2B93293C977D005611A5 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B83293C977D005611A5 /* Fontisto.ttf */; };
-		600E2B94293C977D005611A5 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B84293C977D005611A5 /* Octicons.ttf */; };
-		600E2B95293C977D005611A5 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B85293C977D005611A5 /* Feather.ttf */; };
-		600E2B96293C977D005611A5 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B86293C977D005611A5 /* Entypo.ttf */; };
-		600E2B97293C977D005611A5 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B87293C977D005611A5 /* FontAwesome5_Brands.ttf */; };
-		600E2B98293C977D005611A5 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B88293C977D005611A5 /* MaterialCommunityIcons.ttf */; };
-		600E2B99293C977D005611A5 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B89293C977D005611A5 /* AntDesign.ttf */; };
-		600E2B9A293C977D005611A5 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B8A293C977D005611A5 /* Foundation.ttf */; };
-		600E2B9B293C977D005611A5 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B8B293C977D005611A5 /* Ionicons.ttf */; };
-		600E2B9C293C977D005611A5 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B8C293C977D005611A5 /* FontAwesome5_Solid.ttf */; };
-		600E2B9D293C977D005611A5 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B8D293C977D005611A5 /* FontAwesome5_Regular.ttf */; };
-		600E2B9E293C977D005611A5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B8E293C977D005611A5 /* FontAwesome.ttf */; };
-		600E2B9F293C977D005611A5 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B8F293C977D005611A5 /* Zocial.ttf */; };
-		600E2BA0293C977D005611A5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B90293C977D005611A5 /* EvilIcons.ttf */; };
-		600E2BA1293C977D005611A5 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B91293C977D005611A5 /* SimpleLineIcons.ttf */; };
-		600E2BA2293C977D005611A5 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600E2B92293C977D005611A5 /* MaterialIcons.ttf */; };
-		606B92BB28FB9BDA0079A141 /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606B92BA28FB9BDA0079A141 /* hermes.xcframework */; };
-		606B92BC28FB9BDA0079A141 /* hermes.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 606B92BA28FB9BDA0079A141 /* hermes.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7FCBB1670CEF9D0466E0A1F0 /* libPods-StuTalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D153C378FF729EF6CD8FB7E /* libPods-StuTalk.a */; };
+		15A5154AA33C69957A58176D /* libPods-StuTalk-StuTalkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 012A91AD8E04884BC5AA341A /* libPods-StuTalk-StuTalkTests.a */; };
+		60223DFE29CD9D2100D6D414 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DEE29CD9D2100D6D414 /* Fontisto.ttf */; };
+		60223DFF29CD9D2100D6D414 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DEF29CD9D2100D6D414 /* Octicons.ttf */; };
+		60223E0029CD9D2100D6D414 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF029CD9D2100D6D414 /* Feather.ttf */; };
+		60223E0129CD9D2100D6D414 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF129CD9D2100D6D414 /* Entypo.ttf */; };
+		60223E0229CD9D2100D6D414 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF229CD9D2100D6D414 /* FontAwesome5_Brands.ttf */; };
+		60223E0329CD9D2100D6D414 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF329CD9D2100D6D414 /* MaterialCommunityIcons.ttf */; };
+		60223E0429CD9D2100D6D414 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF429CD9D2100D6D414 /* AntDesign.ttf */; };
+		60223E0529CD9D2100D6D414 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF529CD9D2100D6D414 /* Foundation.ttf */; };
+		60223E0629CD9D2100D6D414 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF629CD9D2100D6D414 /* Ionicons.ttf */; };
+		60223E0729CD9D2100D6D414 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF729CD9D2100D6D414 /* FontAwesome5_Solid.ttf */; };
+		60223E0829CD9D2100D6D414 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF829CD9D2100D6D414 /* FontAwesome5_Regular.ttf */; };
+		60223E0929CD9D2100D6D414 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DF929CD9D2100D6D414 /* FontAwesome.ttf */; };
+		60223E0A29CD9D2100D6D414 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DFA29CD9D2100D6D414 /* Zocial.ttf */; };
+		60223E0B29CD9D2100D6D414 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DFB29CD9D2100D6D414 /* EvilIcons.ttf */; };
+		60223E0C29CD9D2100D6D414 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DFC29CD9D2100D6D414 /* SimpleLineIcons.ttf */; };
+		60223E0D29CD9D2100D6D414 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60223DFD29CD9D2100D6D414 /* MaterialIcons.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		D61C6165BDBA35181A67EC40 /* libPods-StuTalk-StuTalkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C65D71B20DD92738E3D3B6 /* libPods-StuTalk-StuTalkTests.a */; };
+		CE94A596FEC3214AFDC4B47E /* libPods-StuTalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 266E62EBF0AC4036C17D3987 /* libPods-StuTalk.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,55 +42,40 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		606B92BD28FB9BDA0079A141 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				606B92BC28FB9BDA0079A141 /* hermes.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* StuTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StuTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* StuTalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StuTalkTests.m; sourceTree = "<group>"; };
-		05CCD425511C12B933C9209F /* Pods-StuTalk-StuTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk-StuTalkTests.release.xcconfig"; path = "Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		012A91AD8E04884BC5AA341A /* libPods-StuTalk-StuTalkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StuTalk-StuTalkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D8D77689D6B76BFA0EEC235 /* Pods-StuTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk.release.xcconfig"; path = "Target Support Files/Pods-StuTalk/Pods-StuTalk.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* StuTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StuTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = StuTalk/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = StuTalk/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StuTalk/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StuTalk/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StuTalk/main.m; sourceTree = "<group>"; };
-		33C65D71B20DD92738E3D3B6 /* libPods-StuTalk-StuTalkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StuTalk-StuTalkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		457738DFBA5443787F9EFFD9 /* Pods-StuTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk.debug.xcconfig"; path = "Target Support Files/Pods-StuTalk/Pods-StuTalk.debug.xcconfig"; sourceTree = "<group>"; };
-		4D153C378FF729EF6CD8FB7E /* libPods-StuTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StuTalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		600E2B83293C977D005611A5 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
-		600E2B84293C977D005611A5 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
-		600E2B85293C977D005611A5 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
-		600E2B86293C977D005611A5 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
-		600E2B87293C977D005611A5 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
-		600E2B88293C977D005611A5 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
-		600E2B89293C977D005611A5 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
-		600E2B8A293C977D005611A5 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
-		600E2B8B293C977D005611A5 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
-		600E2B8C293C977D005611A5 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
-		600E2B8D293C977D005611A5 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
-		600E2B8E293C977D005611A5 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
-		600E2B8F293C977D005611A5 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
-		600E2B90293C977D005611A5 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
-		600E2B91293C977D005611A5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
-		600E2B92293C977D005611A5 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
-		606B92BA28FB9BDA0079A141 /* hermes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = hermes.xcframework; path = "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework"; sourceTree = "<group>"; };
+		266E62EBF0AC4036C17D3987 /* libPods-StuTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StuTalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60223DEE29CD9D2100D6D414 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		60223DEF29CD9D2100D6D414 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		60223DF029CD9D2100D6D414 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		60223DF129CD9D2100D6D414 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		60223DF229CD9D2100D6D414 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		60223DF329CD9D2100D6D414 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		60223DF429CD9D2100D6D414 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		60223DF529CD9D2100D6D414 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		60223DF629CD9D2100D6D414 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		60223DF729CD9D2100D6D414 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		60223DF829CD9D2100D6D414 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		60223DF929CD9D2100D6D414 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		60223DFA29CD9D2100D6D414 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		60223DFB29CD9D2100D6D414 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		60223DFC29CD9D2100D6D414 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		60223DFD29CD9D2100D6D414 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StuTalk/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8DA621AB3082F859F64B08AB /* Pods-StuTalk-StuTalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk-StuTalkTests.debug.xcconfig"; path = "Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E79C1232B667AC426FDDFB4 /* Pods-StuTalk-StuTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk-StuTalkTests.release.xcconfig"; path = "Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBE86372036F399CE4B98BBB /* Pods-StuTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk.debug.xcconfig"; path = "Target Support Files/Pods-StuTalk/Pods-StuTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F587EACD5162339C9AF8676D /* Pods-StuTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk.release.xcconfig"; path = "Target Support Files/Pods-StuTalk/Pods-StuTalk.release.xcconfig"; sourceTree = "<group>"; };
+		FC83028864838E3C3995C1E3 /* Pods-StuTalk-StuTalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuTalk-StuTalkTests.debug.xcconfig"; path = "Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D61C6165BDBA35181A67EC40 /* libPods-StuTalk-StuTalkTests.a in Frameworks */,
+				15A5154AA33C69957A58176D /* libPods-StuTalk-StuTalkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606B92BB28FB9BDA0079A141 /* hermes.xcframework in Frameworks */,
-				7FCBB1670CEF9D0466E0A1F0 /* libPods-StuTalk.a in Frameworks */,
+				CE94A596FEC3214AFDC4B47E /* libPods-StuTalk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,11 +118,11 @@
 		13B07FAE1A68108700A75B9A /* StuTalk */ = {
 			isa = PBXGroup;
 			children = (
+				60223DED29CD9D2100D6D414 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				600E2B82293C977D005611A5 /* Fonts */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -150,36 +132,35 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				606B92BA28FB9BDA0079A141 /* hermes.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4D153C378FF729EF6CD8FB7E /* libPods-StuTalk.a */,
-				33C65D71B20DD92738E3D3B6 /* libPods-StuTalk-StuTalkTests.a */,
+				266E62EBF0AC4036C17D3987 /* libPods-StuTalk.a */,
+				012A91AD8E04884BC5AA341A /* libPods-StuTalk-StuTalkTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		600E2B82293C977D005611A5 /* Fonts */ = {
+		60223DED29CD9D2100D6D414 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				600E2B83293C977D005611A5 /* Fontisto.ttf */,
-				600E2B84293C977D005611A5 /* Octicons.ttf */,
-				600E2B85293C977D005611A5 /* Feather.ttf */,
-				600E2B86293C977D005611A5 /* Entypo.ttf */,
-				600E2B87293C977D005611A5 /* FontAwesome5_Brands.ttf */,
-				600E2B88293C977D005611A5 /* MaterialCommunityIcons.ttf */,
-				600E2B89293C977D005611A5 /* AntDesign.ttf */,
-				600E2B8A293C977D005611A5 /* Foundation.ttf */,
-				600E2B8B293C977D005611A5 /* Ionicons.ttf */,
-				600E2B8C293C977D005611A5 /* FontAwesome5_Solid.ttf */,
-				600E2B8D293C977D005611A5 /* FontAwesome5_Regular.ttf */,
-				600E2B8E293C977D005611A5 /* FontAwesome.ttf */,
-				600E2B8F293C977D005611A5 /* Zocial.ttf */,
-				600E2B90293C977D005611A5 /* EvilIcons.ttf */,
-				600E2B91293C977D005611A5 /* SimpleLineIcons.ttf */,
-				600E2B92293C977D005611A5 /* MaterialIcons.ttf */,
+				60223DEE29CD9D2100D6D414 /* Fontisto.ttf */,
+				60223DEF29CD9D2100D6D414 /* Octicons.ttf */,
+				60223DF029CD9D2100D6D414 /* Feather.ttf */,
+				60223DF129CD9D2100D6D414 /* Entypo.ttf */,
+				60223DF229CD9D2100D6D414 /* FontAwesome5_Brands.ttf */,
+				60223DF329CD9D2100D6D414 /* MaterialCommunityIcons.ttf */,
+				60223DF429CD9D2100D6D414 /* AntDesign.ttf */,
+				60223DF529CD9D2100D6D414 /* Foundation.ttf */,
+				60223DF629CD9D2100D6D414 /* Ionicons.ttf */,
+				60223DF729CD9D2100D6D414 /* FontAwesome5_Solid.ttf */,
+				60223DF829CD9D2100D6D414 /* FontAwesome5_Regular.ttf */,
+				60223DF929CD9D2100D6D414 /* FontAwesome.ttf */,
+				60223DFA29CD9D2100D6D414 /* Zocial.ttf */,
+				60223DFB29CD9D2100D6D414 /* EvilIcons.ttf */,
+				60223DFC29CD9D2100D6D414 /* SimpleLineIcons.ttf */,
+				60223DFD29CD9D2100D6D414 /* MaterialIcons.ttf */,
 			);
 			name = Fonts;
-			path = "../node_modules/react-native-vector-icons/Fonts";
+			path = StuTalk/Fonts;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -216,10 +197,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				457738DFBA5443787F9EFFD9 /* Pods-StuTalk.debug.xcconfig */,
-				F587EACD5162339C9AF8676D /* Pods-StuTalk.release.xcconfig */,
-				8DA621AB3082F859F64B08AB /* Pods-StuTalk-StuTalkTests.debug.xcconfig */,
-				05CCD425511C12B933C9209F /* Pods-StuTalk-StuTalkTests.release.xcconfig */,
+				DBE86372036F399CE4B98BBB /* Pods-StuTalk.debug.xcconfig */,
+				0D8D77689D6B76BFA0EEC235 /* Pods-StuTalk.release.xcconfig */,
+				FC83028864838E3C3995C1E3 /* Pods-StuTalk-StuTalkTests.debug.xcconfig */,
+				9E79C1232B667AC426FDDFB4 /* Pods-StuTalk-StuTalkTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -231,12 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "StuTalkTests" */;
 			buildPhases = (
-				8E5B3C9E7A357986E870774F /* [CP] Check Pods Manifest.lock */,
+				47DA2B3901A3913A6033951F /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C1E9F7FA058A0ECE73F71914 /* [CP] Embed Pods Frameworks */,
-				33008D1BFF7E9EFD260A8E6B /* [CP] Copy Pods Resources */,
+				9DB727D73245F2FD2CC2DBFE /* [CP] Embed Pods Frameworks */,
+				20A105C447A888D339EE0674 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,15 +233,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "StuTalk" */;
 			buildPhases = (
-				441541F30A45A319FBDB4BBB /* [CP] Check Pods Manifest.lock */,
+				68058E8A83C954C8438CCA42 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				606B92BD28FB9BDA0079A141 /* Embed Frameworks */,
-				EF23E73C1189809354635CC3 /* [CP] Embed Pods Frameworks */,
-				3B44D6669187776DE39A7709 /* [CP] Copy Pods Resources */,
+				1CA495EA51A727C902BD91AC /* [CP] Embed Pods Frameworks */,
+				3279AD436EE03DEC2BA795E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,23 +299,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600E2B93293C977D005611A5 /* Fontisto.ttf in Resources */,
-				600E2B9E293C977D005611A5 /* FontAwesome.ttf in Resources */,
-				600E2B9A293C977D005611A5 /* Foundation.ttf in Resources */,
-				600E2B9D293C977D005611A5 /* FontAwesome5_Regular.ttf in Resources */,
-				600E2B9B293C977D005611A5 /* Ionicons.ttf in Resources */,
-				600E2BA0293C977D005611A5 /* EvilIcons.ttf in Resources */,
-				600E2B96293C977D005611A5 /* Entypo.ttf in Resources */,
+				60223DFE29CD9D2100D6D414 /* Fontisto.ttf in Resources */,
+				60223E0929CD9D2100D6D414 /* FontAwesome.ttf in Resources */,
+				60223E0529CD9D2100D6D414 /* Foundation.ttf in Resources */,
+				60223E0829CD9D2100D6D414 /* FontAwesome5_Regular.ttf in Resources */,
+				60223E0629CD9D2100D6D414 /* Ionicons.ttf in Resources */,
+				60223E0B29CD9D2100D6D414 /* EvilIcons.ttf in Resources */,
+				60223E0129CD9D2100D6D414 /* Entypo.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				600E2B9F293C977D005611A5 /* Zocial.ttf in Resources */,
-				600E2BA1293C977D005611A5 /* SimpleLineIcons.ttf in Resources */,
-				600E2B95293C977D005611A5 /* Feather.ttf in Resources */,
-				600E2B94293C977D005611A5 /* Octicons.ttf in Resources */,
-				600E2B97293C977D005611A5 /* FontAwesome5_Brands.ttf in Resources */,
-				600E2B99293C977D005611A5 /* AntDesign.ttf in Resources */,
-				600E2BA2293C977D005611A5 /* MaterialIcons.ttf in Resources */,
-				600E2B9C293C977D005611A5 /* FontAwesome5_Solid.ttf in Resources */,
-				600E2B98293C977D005611A5 /* MaterialCommunityIcons.ttf in Resources */,
+				60223E0A29CD9D2100D6D414 /* Zocial.ttf in Resources */,
+				60223E0C29CD9D2100D6D414 /* SimpleLineIcons.ttf in Resources */,
+				60223E0029CD9D2100D6D414 /* Feather.ttf in Resources */,
+				60223DFF29CD9D2100D6D414 /* Octicons.ttf in Resources */,
+				60223E0229CD9D2100D6D414 /* FontAwesome5_Brands.ttf in Resources */,
+				60223E0429CD9D2100D6D414 /* AntDesign.ttf in Resources */,
+				60223E0D29CD9D2100D6D414 /* MaterialIcons.ttf in Resources */,
+				60223E0729CD9D2100D6D414 /* FontAwesome5_Solid.ttf in Resources */,
+				60223E0329CD9D2100D6D414 /* MaterialCommunityIcons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,59 +339,58 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		33008D1BFF7E9EFD260A8E6B /* [CP] Copy Pods Resources */ = {
+		1CA495EA51A727C902BD91AC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuTalk/Pods-StuTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuTalk/Pods-StuTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuTalk/Pods-StuTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20A105C447A888D339EE0674 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3B44D6669187776DE39A7709 /* [CP] Copy Pods Resources */ = {
+		3279AD436EE03DEC2BA795E0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuTalk/Pods-StuTalk-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuTalk/Pods-StuTalk-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuTalk/Pods-StuTalk-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		441541F30A45A319FBDB4BBB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StuTalk-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E5B3C9E7A357986E870774F /* [CP] Check Pods Manifest.lock */ = {
+		47DA2B3901A3913A6033951F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -433,34 +412,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C1E9F7FA058A0ECE73F71914 /* [CP] Embed Pods Frameworks */ = {
+		68058E8A83C954C8438CCA42 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StuTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB727D73245F2FD2CC2DBFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuTalk-StuTalkTests/Pods-StuTalk-StuTalkTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF23E73C1189809354635CC3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuTalk/Pods-StuTalk-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -515,7 +503,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA621AB3082F859F64B08AB /* Pods-StuTalk-StuTalkTests.debug.xcconfig */;
+			baseConfigurationReference = FC83028864838E3C3995C1E3 /* Pods-StuTalk-StuTalkTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -542,7 +530,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05CCD425511C12B933C9209F /* Pods-StuTalk-StuTalkTests.release.xcconfig */;
+			baseConfigurationReference = 9E79C1232B667AC426FDDFB4 /* Pods-StuTalk-StuTalkTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -566,7 +554,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 457738DFBA5443787F9EFFD9 /* Pods-StuTalk.debug.xcconfig */;
+			baseConfigurationReference = DBE86372036F399CE4B98BBB /* Pods-StuTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -577,6 +565,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -592,7 +581,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F587EACD5162339C9AF8676D /* Pods-StuTalk.release.xcconfig */;
+			baseConfigurationReference = 0D8D77689D6B76BFA0EEC235 /* Pods-StuTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -602,6 +591,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
