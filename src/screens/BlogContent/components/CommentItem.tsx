@@ -1,15 +1,5 @@
 import React, {memo} from 'react';
-import {
-  Avatar,
-  Box,
-  Button,
-  HStack,
-  Pressable,
-  Spacer,
-  Text,
-  VStack,
-} from 'native-base';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import {Box, Button, Text, VStack} from 'native-base';
 import {BlogContent} from '../../../types';
 import Colors from '../../../ui/Colors';
 import {StyleSheet} from 'react-native';

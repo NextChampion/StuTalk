@@ -295,7 +295,7 @@ const BlogItem = (props: IProps) => {
                 rounded={'xl'}
                 px={2}
                 py={0}>
-                <Icon size={14} color={Colors.indigo[500]} name={'cog'} />
+                <Icon size={14} color={Colors.indigo[500]} name={'at'} />
                 <Text color={'indigo.500'} ml={1}>
                   {topic.name}
                 </Text>

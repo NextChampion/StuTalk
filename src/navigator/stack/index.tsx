@@ -10,6 +10,7 @@ import ForgetPasswordScreen from '../../screens/ForgetPassword';
 import RegisterScreen from '../../screens/Register';
 import BlogContentScreen from '../../screens/BlogContent';
 import {RootStackParamList} from '../../types/navigator';
+import InputScreen from '../../screens/InputScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -56,6 +57,9 @@ function MainStackNavigator(props: IProps) {
               headerShown: false,
             }}
           />
+          <Stack.Group screenOptions={{presentation: 'modal'}}>
+            <Stack.Screen name="Input" component={InputScreen} />
+          </Stack.Group>
         </>
       )}
     </Stack.Navigator>

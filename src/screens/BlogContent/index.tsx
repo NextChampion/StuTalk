@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 // import BlogItem from './components/BlogItem';
 import {StyleSheet} from 'react-native';
 import BlogItem from '../BlogList/components/BlogItem';
@@ -8,9 +8,18 @@ import {BlogContent} from '../../types';
 import {RootStackParamList} from '../../types/navigator';
 import PageContainer from '../../components/PageContainer';
 import NavHeader from '../../components/NavHeader';
-import {Box, Button, SectionList, Text, View} from 'native-base';
+import {
+  Box,
+  Button,
+  KeyboardAvoidingView,
+  SectionList,
+  Text,
+  View,
+} from 'native-base';
 import {commentList} from '../../mock/blog';
 import CommmentItem from './components/CommentItem';
+import CommentFooter from './components/CommentFooter';
+import InputModal from './components/InputModal';
 interface IProps {
   navigation?: NavigationScreenProp<RootStackParamList, 'BlogContent'>;
   route: RouteProp<{params: {data: BlogContent}}>;
@@ -19,6 +28,13 @@ interface IProps {
 const BlogContentScreen = (props: IProps) => {
   const {route} = props;
   const {data} = route.params;
+
+  const [modalVisiable, setModalVisiable] = useState<boolean>(false);
+
+  const onInputPress = () => {
+    setModalVisiable(true);
+  };
+
   const renderRightItem = () => {
     return <Button>更多</Button>;
   };
@@ -40,9 +56,10 @@ const BlogContentScreen = (props: IProps) => {
   ];
 
   return (
-    <View backgroundColor={'#FFF'}>
+    <KeyboardAvoidingView backgroundColor={'#FFF'} flex={1}>
       <NavHeader back title="说说" rightItem={renderRightItem()} />
       <SectionList
+        flex={1}
         sections={SECTIONS}
         ListHeaderComponent={() => <BlogItem data={data} type="detail" />}
         data={commentList.lst}
@@ -59,7 +76,14 @@ const BlogContentScreen = (props: IProps) => {
         )}
         renderItem={renderItem}
       />
-    </View>
+      <CommentFooter onInputPress={onInputPress} />
+      <InputModal
+        isOpen={modalVisiable}
+        onClosePress={() => {
+          setModalVisiable(false);
+        }}
+      />
+    </KeyboardAvoidingView>
   );
 };
 
