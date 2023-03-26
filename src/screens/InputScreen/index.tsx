@@ -9,7 +9,7 @@ const InputScreen = () => {
     <KeyboardAvoidingView>
       <Box marginBottom={'34px'} px={3}>
         <HStack>
-          <Image rounded={'2xl'} source={{uri: a}} w={30} h={30} />
+          <Image rounded={'2xl'} source={{uri: a}} w={30} h={30} alt="" />
           <Input
             rounded={'xl'}
             flex={1}

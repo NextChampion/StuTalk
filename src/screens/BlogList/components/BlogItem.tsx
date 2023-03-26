@@ -290,6 +290,7 @@ const BlogItem = (props: IProps) => {
           <HStack my={1}>
             {global_topics?.map(topic => (
               <HStack
+                key={topic.name}
                 alignItems={'center'}
                 backgroundColor={'indigo.100'}
                 rounded={'xl'}
@@ -306,6 +307,7 @@ const BlogItem = (props: IProps) => {
           <HStack>
             {(imgs || pics)?.map(picInfo => (
               <Image
+                key={picInfo.turl}
                 source={{uri: picInfo.turl}}
                 width={'100px'}
                 height={'100px'}
@@ -313,6 +315,7 @@ const BlogItem = (props: IProps) => {
                 borderWidth={StyleSheet.hairlineWidth}
                 borderColor={Colors.gray[200]}
                 rounded="lg"
+                alt=""
               />
             ))}
           </HStack>
