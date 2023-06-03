@@ -3,11 +3,11 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Text} from 'native-base';
 
-import HomeScreen from '../../screens/Home';
-import SettingsScreen from '../../screens/Settings';
-import ProfileScreen from '../../screens/Profile';
-import ContactsScreen from '../../screens/Contacts';
-import MessagesScreen from '../../screens/Messages';
+import HomeScreen from '../../screens/HomeTab/Home';
+import ProfileScreen from '../../screens/MineTab/Profile';
+import ContactsScreen from '../../screens/ContractsTab/Contacts';
+import MessagesScreen from '../../screens/MessagesTab/Messages';
+import SettingsScreen from '../../screens/MineTab/Settings';
 
 const Tab = createBottomTabNavigator();
 

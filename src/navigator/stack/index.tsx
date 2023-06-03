@@ -4,11 +4,11 @@ import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {connect} from 'react-redux';
 import TabNavigator from '../tab';
-import ProfileScreen from '../../screens/Profile';
-import LoginScreen from '../../screens/Login';
-import ForgetPasswordScreen from '../../screens/ForgetPassword';
-import RegisterScreen from '../../screens/Register';
-import BlogContentScreen from '../../screens/BlogContent';
+import ProfileScreen from '../../screens/MineTab/Profile';
+import LoginScreen from '../../screens/MineTab/Login';
+import ForgetPasswordScreen from '../../screens/MineTab/ForgetPassword';
+import RegisterScreen from '../../screens/MineTab/Register';
+import BlogContentScreen from '../../screens/HomeTab/BlogContent';
 import {RootStackParamList} from '../../types/navigator';
 import InputScreen from '../../screens/InputScreen';
 
