@@ -2,8 +2,8 @@ import {StyleSheet} from 'react-native';
 import React from 'react';
 
 import ScrollableTabView from '../../components/ScrollableTabView';
+import RecommendScreen from '../Recommend';
 import OldBoyScreen from '../OldBoy';
-import RecommmendScreen from '../Recommend';
 import HotListScreen from '../HotList';
 import CustomTabBar from '../../components/CustomTabBar';
 import Colors from '../../ui/Colors';
@@ -24,7 +24,7 @@ export default function HomeScreen() {
       renderTabBar={(props: any) => <CustomTabBar {...props} />}
       tabBarActiveTextColor={Colors.indigo[500]}>
       <OldBoyScreen tabLabel="校友圈" />
-      <RecommmendScreen tabLabel="推荐" />
+      <RecommendScreen tabLabel="推荐" />
       <HotListScreen tabLabel="热榜" />
     </ScrollableTabView>
   );
