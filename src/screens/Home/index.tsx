@@ -24,7 +24,7 @@ export default function HomeScreen() {
       renderTabBar={(props: any) => <CustomTabBar {...props} />}
       tabBarActiveTextColor={Colors.indigo[500]}>
       <OldBoyScreen tabLabel="校友圈" />
-      <RecommendScreen tabLabel="推荐" />
+      <RecommendScreen tabLabel="广场" />
       <HotListScreen tabLabel="热榜" />
     </ScrollableTabView>
   );
