@@ -7,7 +7,6 @@ import HomeScreen from '../../screens/HomeTab/Home';
 import ProfileScreen from '../../screens/MineTab/Profile';
 import ContactsScreen from '../../screens/ContractsTab/Contacts';
 import MessagesScreen from '../../screens/MessagesTab/Messages';
-import SettingsScreen from '../../screens/MineTab/Settings';
 
 const Tab = createBottomTabNavigator();
 
@@ -49,22 +48,6 @@ function TabNavigator() {
             );
           },
           headerShown: false,
-        }}
-      />
-      <Tab.Screen
-        name="Settings"
-        component={SettingsScreen}
-        options={{
-          tabBarIcon: ({color}) => {
-            return <Icon color={color} size={26} name={'cog'} />;
-          },
-          tabBarLabel: ({color}) => {
-            return (
-              <Text color={color} fontSize="xs">
-                广场
-              </Text>
-            );
-          },
         }}
       />
       <Tab.Screen

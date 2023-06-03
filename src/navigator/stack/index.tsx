@@ -11,6 +11,7 @@ import RegisterScreen from '../../screens/MineTab/Register';
 import BlogContentScreen from '../../screens/HomeTab/BlogContent';
 import {RootStackParamList} from '../../types/navigator';
 import InputScreen from '../../screens/InputScreen';
+import SettingsScreen from '../../screens/MineTab/Settings';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -50,6 +51,7 @@ function MainStackNavigator(props: IProps) {
             }}
           />
           <Stack.Screen name="Profile" component={ProfileScreen} />
+          <Stack.Screen name="Setting" component={SettingsScreen} />
           <Stack.Screen
             name="BlogContent"
             component={BlogContentScreen}

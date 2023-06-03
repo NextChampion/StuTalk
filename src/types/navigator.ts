@@ -7,4 +7,5 @@ export type RootStackParamList = {
   Profile: undefined;
   BlogContent: undefined;
   Input: undefined;
+  Setting: undefined;
 };

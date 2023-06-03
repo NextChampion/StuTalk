@@ -5,8 +5,10 @@ import ProfileCard from './components/ProfileCard';
 import NavHeader from '../../../components/NavHeader';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {Pressable} from 'native-base';
+import {useNavigation} from '@react-navigation/native';
 
 export default function ProfileScreen() {
+  const navigation = useNavigation();
   const user = {
     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
     fullName: 'Aafreen Khan',
@@ -18,6 +20,7 @@ export default function ProfileScreen() {
 
   const onSettingPress = () => {
     console.log('onSettingPress');
+    navigation.navigate('Setting');
   };
 
   const renderRightItem = () => {
