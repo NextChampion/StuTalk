@@ -21,9 +21,9 @@ export default function RecommmendScreen(props: IProps) {
       <BlogListScreen tabLabel="关注" />
       <BlogListScreen tabLabel="全部" />
       <BlogListScreen tabLabel="校内" />
-      <BlogListScreen tabLabel="专业" />
-      <BlogListScreen tabLabel="班级" />
-      <BlogListScreen tabLabel="热榜4" />
+      <BlogListScreen tabLabel="毕业季" />
+      <BlogListScreen tabLabel="就业" />
+      <BlogListScreen tabLabel="共创" />
     </ScrollableTabView>
   );
 }
